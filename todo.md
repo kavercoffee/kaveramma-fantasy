@@ -220,3 +220,8 @@
 ## Bug Fix - Favicon Visibility
 - [x] Fix favicon not visible in dark browser tabs
 - [x] Add white background to favicon for visibility
+
+
+## Bug Fix - Footer Logo Not Visible
+- [x] Fix footer logo not displaying on dark background
+- [x] Use original logo (transparent) for footer
