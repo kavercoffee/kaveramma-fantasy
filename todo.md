@@ -238,3 +238,9 @@
 - [x] Include reporting mechanisms and appeal process
 - [x] Add examples of fair and unfair practices
 - [x] Enhance visual design with modern card layouts
+
+
+## Fix Copyright Text in Footer
+- [x] Update Footer component to use official company name
+- [x] Update Home page footer to use official company name
+- [x] Change from "Kaveramma Fantasy Cricket" to "KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED"

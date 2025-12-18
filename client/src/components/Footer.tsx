@@ -86,7 +86,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-white/40 text-xs">
-            <p>© {currentYear} Kaveramma Fantasy Cricket. All rights reserved.</p>
+            <p>© {currentYear} KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED. All rights reserved.</p>
             <p>Domain: kaverammafantasy.com</p>
           </div>
         </div>

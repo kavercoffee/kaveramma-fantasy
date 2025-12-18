@@ -1103,7 +1103,7 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-white/40 text-sm">
-              <p>© 2025 Kaveramma Fantasy Cricket. All rights reserved.</p>
+              <p>© 2025 KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED. All rights reserved.</p>
               <p className="flex items-center">
                 <Globe className="w-4 h-4 mr-2" />
                 kaverammafantasy.com
