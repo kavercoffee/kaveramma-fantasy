@@ -1,19 +1,17 @@
+import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
+import { Heart, Calendar, Clock, Users, Brain, Shield, AlertTriangle, Phone, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Heart, ChevronRight, CheckCircle2, Clock, Users, Brain, Shield, AlertTriangle, Phone, BookOpen } from "lucide-react";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
 
 export default function ResponsibleGaming() {
+  const lastUpdated = "December 18, 2024";
+
   const guidelines = [
-    { icon: Clock, title: "Set Time Limits", description: "Decide how much time you want to spend on fantasy cricket and stick to it. Take regular breaks." },
-    { icon: Brain, title: "Play for Fun", description: "Remember that fantasy cricket is meant to be entertaining. Don't let it become a source of stress." },
-    { icon: Users, title: "Maintain Balance", description: "Keep a healthy balance between fantasy cricket and other activities, work, and relationships." },
-    { icon: Shield, title: "Stay Informed", description: "Understand the rules and how the platform works. Knowledge leads to better decisions." }
+    { icon: Clock, title: "Set Time Limits", description: "Decide how much time you'll spend and stick to it" },
+    { icon: Brain, title: "Play for Fun", description: "Fantasy cricket is entertainment, not stress" },
+    { icon: Users, title: "Maintain Balance", description: "Keep healthy balance with other activities" },
+    { icon: Shield, title: "Stay Informed", description: "Understand the rules and make better decisions" }
   ];
 
   const warningSignsPersonal = [
@@ -21,249 +19,225 @@ export default function ResponsibleGaming() {
     "Neglecting work, studies, or personal responsibilities",
     "Feeling restless or irritable when not playing",
     "Lying to others about time spent on the platform",
-    "Using fantasy cricket to escape problems or negative feelings",
-    "Difficulty stopping even when you want to"
+    "Using fantasy cricket to escape problems"
   ];
 
   const healthyHabits = [
-    "Set a daily or weekly time limit for using the platform",
+    "Set a daily or weekly time limit",
     "Take a break every hour when playing",
     "Don't play when tired, stressed, or emotional",
     "Keep fantasy cricket as one of many hobbies",
-    "Talk to friends and family about your gaming habits",
-    "If it stops being fun, take a break"
+    "Talk to friends and family about your gaming habits"
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-bold text-lg">KAVERAMMA</div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
-              </div>
-            </a>
-          </Link>
-          <div className="flex items-center space-x-4">
-            <Link href="/login"><Button variant="ghost">Login</Button></Link>
-            <Link href="/register"><Button className="bg-gradient-to-r from-primary to-primary/90 text-white">Get Started</Button></Link>
+    <Layout>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }} />
+        </div>
+        
+        <div className="container relative">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 rounded-full mb-6">
+              <Heart className="w-4 h-4 text-red-400" />
+              <span className="text-sm text-white/80">Your Wellbeing Matters</span>
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              Responsible Gaming
+            </h1>
+            <p className="text-lg text-white/70 mb-6">
+              Play smart, stay balanced, and enjoy fantasy cricket responsibly
+            </p>
+            <div className="flex items-center justify-center space-x-2 text-sm text-white/60">
+              <Calendar className="w-4 h-4" />
+              <span>Last Updated: {lastUpdated}</span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Free to Play Notice */}
+      <section className="py-6 bg-green-50 border-b border-green-200">
+        <div className="container">
+          <div className="max-w-4xl mx-auto flex items-center justify-center space-x-4">
+            <CheckCircle2 className="w-8 h-8 text-green-600" />
+            <div>
+              <h3 className="font-bold text-green-800">100% Free to Play - No Real Money</h3>
+              <p className="text-sm text-green-700">Our platform involves no financial risk - play purely for entertainment</p>
+            </div>
           </div>
         </div>
-      </header>
+      </section>
 
-      <main>
-        {/* Hero */}
-        <section className="relative py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-blue-50/30 to-green-50/20">
-          <div className="container">
-            <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white border border-border/50 rounded-full shadow-sm mb-6">
-                <Heart className="w-4 h-4 text-red-500" />
-                <span className="text-sm font-medium">Your Wellbeing Matters</span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-4">Responsible Gaming</h1>
-              <p className="text-lg text-muted-foreground">
-                At Kaveramma Fantasy Cricket, we care about your wellbeing. While our platform is free-to-play 
-                with no real money involved, we still encourage healthy gaming habits.
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Our Commitment */}
-        <section className="py-12 bg-white">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-primary/5 to-green-500/5 rounded-2xl p-8 border border-border/50">
-                <h2 className="text-2xl font-bold mb-4">Our Commitment to You</h2>
-                <p className="text-muted-foreground mb-4">
-                  Even though Kaveramma Fantasy Cricket is completely free-to-play with no real money involved, 
-                  we recognize that any activity can become problematic if not balanced properly. We are committed to:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start"><CheckCircle2 className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-1" /><span>Promoting healthy gaming habits among all users</span></li>
-                  <li className="flex items-start"><CheckCircle2 className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-1" /><span>Providing resources for users who may need support</span></li>
-                  <li className="flex items-start"><CheckCircle2 className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-1" /><span>Maintaining a platform that is safe for all ages (18+)</span></li>
-                  <li className="flex items-start"><CheckCircle2 className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-1" /><span>Never introducing real money gambling or betting</span></li>
-                </ul>
-              </div>
+      {/* Guidelines */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-8">Guidelines for Healthy Gaming</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {guidelines.map((item, index) => (
+                <motion.div 
+                  key={index} 
+                  className="p-5 bg-gray-50 rounded-xl text-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mx-auto mb-3">
+                    <item.icon className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-sm text-gray-500">{item.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Guidelines */}
-        <section className="py-12 bg-slate-50">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-center mb-8">Guidelines for Healthy Gaming</h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {guidelines.map((g, i) => (
-                  <div key={i} className="p-5 bg-white rounded-xl border border-border/50 text-center">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <g.icon className="w-6 h-6 text-primary" />
+      {/* Warning Signs & Healthy Habits */}
+      <section className="py-12 lg:py-16 bg-gray-50">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Warning Signs */}
+              <motion.div 
+                className="bg-white rounded-2xl border border-amber-200 overflow-hidden"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="bg-amber-50 px-6 py-4 border-b border-amber-200">
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-amber-100 rounded-lg">
+                      <AlertTriangle className="w-5 h-5 text-amber-600" />
                     </div>
-                    <h3 className="font-semibold mb-2">{g.title}</h3>
-                    <p className="text-sm text-muted-foreground">{g.description}</p>
+                    <h3 className="text-lg font-bold text-amber-800">Warning Signs</h3>
                   </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Warning Signs */}
-        <section className="py-12 bg-white">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <AlertTriangle className="w-8 h-8 text-amber-600" />
-                  <h2 className="text-xl font-bold text-amber-800">Warning Signs to Watch For</h2>
                 </div>
-                <p className="text-amber-700 mb-4">
-                  If you notice any of these signs in yourself or someone you know, it may be time to take a break:
-                </p>
-                <ul className="grid sm:grid-cols-2 gap-2">
-                  {warningSignsPersonal.map((sign, i) => (
-                    <li key={i} className="flex items-start text-sm text-amber-800">
-                      <AlertTriangle className="w-4 h-4 mr-2 text-amber-600 flex-shrink-0 mt-0.5" />
-                      <span>{sign}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Healthy Habits */}
-        <section className="py-12 bg-slate-50">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-2xl p-6 border border-green-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <Heart className="w-8 h-8 text-green-600" />
-                  <h2 className="text-xl font-bold text-green-800">Tips for Healthy Gaming</h2>
+                <div className="p-6">
+                  <ul className="space-y-3">
+                    {warningSignsPersonal.map((item, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="grid sm:grid-cols-2 gap-3">
-                  {healthyHabits.map((habit, i) => (
-                    <li key={i} className="flex items-start text-sm">
-                      <CheckCircle2 className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>{habit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+              </motion.div>
 
-        {/* Self-Exclusion */}
-        <section className="py-12 bg-white">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold mb-6">Self-Exclusion Option</h2>
-              <div className="bg-slate-50 rounded-2xl p-6 border border-border/50">
-                <p className="text-muted-foreground mb-4">
-                  If you feel you need a break from fantasy cricket, we offer a self-exclusion option. 
-                  You can request to temporarily or permanently deactivate your account by contacting our support team.
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start text-sm"><CheckCircle2 className="w-4 h-4 mr-2 text-primary flex-shrink-0 mt-0.5" /><span><strong>Temporary Break:</strong> Deactivate your account for 7, 30, or 90 days</span></li>
-                  <li className="flex items-start text-sm"><CheckCircle2 className="w-4 h-4 mr-2 text-primary flex-shrink-0 mt-0.5" /><span><strong>Permanent Exclusion:</strong> Permanently close your account</span></li>
-                </ul>
-                <Link href="/contact">
-                  <Button variant="outline">Request Self-Exclusion</Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Resources */}
-        <section className="py-12 bg-slate-50">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold mb-6">Support Resources</h2>
-              <p className="text-muted-foreground mb-6">
-                If you or someone you know is struggling with gaming habits or any form of addiction, 
-                these resources can help:
-              </p>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="bg-white rounded-xl p-5 border border-border/50">
-                  <Phone className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="font-semibold mb-2">iCall - TISS</h3>
-                  <p className="text-sm text-muted-foreground mb-2">Free psychological counseling service</p>
-                  <p className="font-mono text-primary">9152987821</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 border border-border/50">
-                  <Phone className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="font-semibold mb-2">Vandrevala Foundation</h3>
-                  <p className="text-sm text-muted-foreground mb-2">24/7 mental health helpline</p>
-                  <p className="font-mono text-primary">1860-2662-345</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Age Restriction */}
-        <section className="py-12 bg-white">
-          <div className="container">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
-                    <span className="text-red-600 font-bold text-lg">18+</span>
+              {/* Healthy Habits */}
+              <motion.div 
+                className="bg-white rounded-2xl border border-green-200 overflow-hidden"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="bg-green-50 px-6 py-4 border-b border-green-200">
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-green-100 rounded-lg">
+                      <Heart className="w-5 h-5 text-green-600" />
+                    </div>
+                    <h3 className="text-lg font-bold text-green-800">Healthy Habits</h3>
                   </div>
-                  <h2 className="text-xl font-bold text-red-800">Age Restriction</h2>
                 </div>
-                <p className="text-red-700">
-                  Kaveramma Fantasy Cricket is strictly for users aged 18 and above. We take this seriously 
-                  and verify age during registration. If you are under 18, please do not attempt to use this platform. 
-                  Parents and guardians should monitor their children's online activities.
-                </p>
-              </div>
+                <div className="p-6">
+                  <ul className="space-y-3">
+                    {healthyHabits.map((item, index) => (
+                      <li key={index} className="flex items-start space-x-3">
+                        <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
             </div>
-          </div>
-        </section>
 
-        {/* Contact */}
-        <section className="py-12 bg-slate-50">
-          <div className="container">
-            <div className="max-w-2xl mx-auto text-center">
-              <BookOpen className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-bold mb-4">Need Help?</h2>
-              <p className="text-muted-foreground mb-6">
-                If you have any questions about responsible gaming or need support, our team is here to help.
+            {/* Support Resources */}
+            <motion.div 
+              className="mt-10 bg-white rounded-2xl border border-blue-200 overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="bg-blue-50 px-6 py-4 border-b border-blue-200">
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 bg-blue-100 rounded-lg">
+                    <Phone className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-bold text-blue-800">Support Resources</h3>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 mb-6">If you or someone you know needs support:</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="p-4 bg-gray-50 rounded-xl">
+                    <h4 className="font-semibold text-gray-900 mb-1">iCall - TISS</h4>
+                    <p className="text-blue-600 font-medium mb-1">9152987821</p>
+                    <p className="text-sm text-gray-500">Free psychological counseling</p>
+                  </div>
+                  <div className="p-4 bg-gray-50 rounded-xl">
+                    <h4 className="font-semibold text-gray-900 mb-1">Vandrevala Foundation</h4>
+                    <p className="text-blue-600 font-medium mb-1">1860-2662-345</p>
+                    <p className="text-sm text-gray-500">24/7 mental health helpline</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Age Restriction */}
+            <motion.div 
+              className="mt-10 bg-red-50 border border-red-200 rounded-2xl p-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center space-x-4">
+                <div className="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                  <span className="text-red-600 font-bold text-xl">18+</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-red-800 mb-1">Age Restriction</h3>
+                  <p className="text-red-700 text-sm">
+                    Kaveramma Fantasy Cricket is strictly for users aged 18 and above. We verify age during registration.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Need Help CTA */}
+            <motion.div 
+              className="mt-10 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl p-8 text-center text-white"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <Heart className="w-12 h-12 mx-auto mb-4 opacity-80" />
+              <h3 className="text-xl font-bold mb-2">Need Help?</h3>
+              <p className="text-white/80 max-w-xl mx-auto mb-6">
+                If you have questions about responsible gaming or need support, our team is here to help.
               </p>
               <Link href="/contact">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-green-600 text-white">
-                  Contact Support <ChevronRight className="w-4 h-4 ml-2" />
+                <Button size="lg" className="bg-white text-purple-700 hover:bg-white/90">
+                  Contact Support
                 </Button>
               </Link>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center"><span className="text-white font-bold">K</span></div>
-              <div><div className="font-bold">KAVERAMMA</div><div className="text-xs text-white/60">Fantasy Cricket</div></div>
-            </div>
-            <p className="text-sm text-white/40">© 2024 Kaveramma Fantasy Cricket</p>
+            </motion.div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </Layout>
   );
 }

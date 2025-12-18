@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -195,33 +196,7 @@ export default function HowToPlay() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-bold text-lg">KAVERAMMA</div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
-              </div>
-            </a>
-          </Link>
-          <div className="flex items-center space-x-4">
-            <Link href="/login">
-              <Button variant="ghost">Login</Button>
-            </Link>
-            <Link href="/register">
-              <Button className="bg-gradient-to-r from-primary to-primary/90 text-white">Get Started</Button>
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      <main>
+    <Layout>
         {/* Hero Section */}
         <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-blue-50/30 to-green-50/20 overflow-hidden">
           <div className="container relative">
@@ -586,30 +561,6 @@ export default function HowToPlay() {
             </motion.div>
           </div>
         </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                <span className="text-white font-bold">K</span>
-              </div>
-              <div>
-                <div className="font-bold">KAVERAMMA</div>
-                <div className="text-xs text-white/60">Fantasy Cricket</div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-6 text-sm text-white/60">
-              <Link href="/terms-and-conditions"><a className="hover:text-white">Terms</a></Link>
-              <Link href="/privacy-policy"><a className="hover:text-white">Privacy</a></Link>
-              <Link href="/contact"><a className="hover:text-white">Contact</a></Link>
-            </div>
-            <p className="text-sm text-white/40">© 2024 Kaveramma Fantasy Cricket</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </Layout>
   );
 }

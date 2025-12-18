@@ -164,3 +164,14 @@
 - [x] Blog page (blog listing)
 - [x] Contact Us page (form and company details)
 - [x] Update App.tsx with all routes
+
+
+## Header/Footer Consistency & Policy Page Redesign
+- [x] Create shared Header component matching homepage
+- [x] Create shared Footer component matching homepage
+- [x] Redesign Terms & Conditions page with better layout
+- [x] Redesign Privacy Policy page with better layout
+- [x] Redesign Fair Play Policy page with better layout
+- [x] Redesign Responsible Gaming page with better layout
+- [x] Update all informational pages to use shared components
+- [x] Ensure consistent styling across all pages
