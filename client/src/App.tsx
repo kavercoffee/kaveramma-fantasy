@@ -36,6 +36,7 @@ function Router() {
       <Route path="/terms-and-conditions" component={TermsAndConditions} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/fair-play" component={FairPlay} />
+      <Route path="/fair-play-policy" component={FairPlay} />
       <Route path="/responsible-gaming" component={ResponsibleGaming} />
       <Route path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />

@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center mb-4">
               <img 
-                src="/logo-footer.png" 
+                src="/logo-dark.png" 
                 alt="Kaveramma Fantasy Cricket" 
                 className="h-14 w-auto object-contain"
               />

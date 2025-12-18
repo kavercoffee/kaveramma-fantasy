@@ -1013,7 +1013,7 @@ export default function Home() {
             <div className="lg:col-span-1">
               <div className="flex items-center mb-6">
                 <img 
-                  src="/logo-footer.png" 
+                  src="/logo-dark.png" 
                   alt="Kaveramma Fantasy Cricket" 
                   className="h-16 w-auto object-contain"
                 />
