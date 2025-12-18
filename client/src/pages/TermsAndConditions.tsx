@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FileText, Calendar, AlertTriangle, CheckCircle } from "lucide-react";
 
 export default function TermsAndConditions() {
-  const lastUpdated = "December 18, 2024";
+  const lastUpdated = "December 18, 2025";
 
   return (
     <Layout>

@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 export default function ResponsibleGaming() {
-  const lastUpdated = "December 18, 2024";
+  const lastUpdated = "December 18, 2025";
 
   const guidelines = [
     { icon: Clock, title: "Set Time Limits", description: "Decide how much time you'll spend and stick to it" },

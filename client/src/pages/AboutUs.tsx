@@ -53,9 +53,9 @@ export default function AboutUs() {
   ];
 
   const milestones = [
-    { year: "2024", title: "Company Founded", description: "Kaveramma Coffee Curing Works Private Limited was incorporated in Karnataka" },
-    { year: "2024", title: "Platform Launch", description: "Launched Kaveramma Fantasy Cricket as a free-to-play educational platform" },
-    { year: "2024", title: "Growing Community", description: "Building a community of cricket enthusiasts across India" }
+    { year: "2025", title: "Company Founded", description: "Kaveramma Coffee Curing Works Private Limited was incorporated in Karnataka" },
+    { year: "2025", title: "Platform Launch", description: "Launched Kaveramma Fantasy Cricket as a free-to-play educational platform" },
+    { year: "2025", title: "Growing Community", description: "Building a community of cricket enthusiasts across India" }
   ];
 
   return (
@@ -108,7 +108,7 @@ export default function AboutUs() {
                 <div className="space-y-4 text-muted-foreground">
                   <p>
                     <strong className="text-foreground">Kaveramma Fantasy Cricket</strong> was born from a simple idea: 
-                    everyone should be able to enjoy fantasy cricket without worrying about money. Founded in 2024 by 
+                    everyone should be able to enjoy fantasy cricket without worrying about money. Founded in 2025 by 
                     <strong className="text-foreground"> Kaveramma Coffee Curing Works Private Limited</strong>, we set out 
                     to create a platform that focuses purely on the love of cricket and strategic gameplay.
                   </p>

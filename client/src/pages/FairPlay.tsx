@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Shield, CheckCircle2, XCircle, AlertTriangle, Scale, Eye, Award, Calendar } from "lucide-react";
 
 export default function FairPlay() {
-  const lastUpdated = "December 18, 2024";
+  const lastUpdated = "December 18, 2025";
 
   const principles = [
     { icon: Scale, title: "Equal Opportunity", description: "Every user has the same chance to succeed" },

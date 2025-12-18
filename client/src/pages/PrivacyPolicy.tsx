@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Shield, Calendar, Lock, Eye, Database, UserCheck } from "lucide-react";
 
 export default function PrivacyPolicy() {
-  const lastUpdated = "December 18, 2024";
+  const lastUpdated = "December 18, 2025";
 
   const highlights = [
     { icon: Lock, title: "Data Encryption", description: "All personal data is encrypted" },

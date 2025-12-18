@@ -18,7 +18,7 @@ export default function Blog() {
       excerpt: "New to fantasy cricket? This comprehensive guide covers everything you need to know to start building winning teams and understanding player statistics.",
       category: "Guides",
       author: "Kaveramma Team",
-      date: "December 15, 2024",
+      date: "December 15, 2025",
       readTime: "8 min read",
       image: "🏏"
     },
@@ -28,7 +28,7 @@ export default function Blog() {
       excerpt: "Your captain choice can make or break your fantasy team. Learn the strategies and factors to consider when selecting your captain and vice-captain.",
       category: "Strategy",
       author: "Kaveramma Team",
-      date: "December 12, 2024",
+      date: "December 12, 2025",
       readTime: "6 min read",
       image: "👑"
     },
@@ -38,7 +38,7 @@ export default function Blog() {
       excerpt: "Dive deep into cricket statistics like strike rate, economy rate, and average. Learn how to use these numbers to make informed player selections.",
       category: "Education",
       author: "Kaveramma Team",
-      date: "December 10, 2024",
+      date: "December 10, 2025",
       readTime: "10 min read",
       image: "📊"
     },
@@ -48,7 +48,7 @@ export default function Blog() {
       excerpt: "Different cricket formats require different fantasy strategies. Understand how to adjust your team selection based on the match format.",
       category: "Strategy",
       author: "Kaveramma Team",
-      date: "December 8, 2024",
+      date: "December 8, 2025",
       readTime: "7 min read",
       image: "🎯"
     },
@@ -58,7 +58,7 @@ export default function Blog() {
       excerpt: "Pitch conditions and weather can significantly impact player performance. Learn how to factor these into your team selection decisions.",
       category: "Tips",
       author: "Kaveramma Team",
-      date: "December 5, 2024",
+      date: "December 5, 2025",
       readTime: "5 min read",
       image: "🌤️"
     },
@@ -68,7 +68,7 @@ export default function Blog() {
       excerpt: "Even experienced players make these mistakes. Learn what to avoid to improve your fantasy cricket performance and climb the leaderboard.",
       category: "Tips",
       author: "Kaveramma Team",
-      date: "December 3, 2024",
+      date: "December 3, 2025",
       readTime: "6 min read",
       image: "⚠️"
     }

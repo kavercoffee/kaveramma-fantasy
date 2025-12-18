@@ -196,3 +196,9 @@
 - [x] Fix nested anchor tag error in Header component
 - [x] Fix nested anchor tag error in Home page
 - [x] Fix nested anchor tag error in Footer component
+
+
+## Bug Fix - Update Year from 2024 to 2025
+- [x] Find all instances of 2024 in the codebase
+- [x] Update all copyright and date references to 2025
+- [x] Keep CIN numbers unchanged (official registration numbers)
