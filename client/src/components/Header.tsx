@@ -22,8 +22,8 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="/logo-main.png" 
-            alt="Kaveramma Fantasy Cricket" 
+            src="/logo-dark.png" 
+            alt="Kaveramma" 
             className="h-14 w-auto object-contain"
           />
         </Link>

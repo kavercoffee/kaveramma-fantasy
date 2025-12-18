@@ -384,8 +384,8 @@ export default function Home() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img 
-              src="/logo-main.png" 
-              alt="Kaveramma Fantasy Cricket" 
+              src="/logo-dark.png" 
+              alt="Kaveramma" 
               className="h-14 w-auto object-contain"
             />
           </Link>
@@ -1014,7 +1014,7 @@ export default function Home() {
               <div className="flex items-center mb-6">
                 <img 
                   src="/logo-dark.png" 
-                  alt="Kaveramma Fantasy Cricket" 
+                  alt="Kaveramma" 
                   className="h-16 w-auto object-contain"
                 />
               </div>

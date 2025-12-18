@@ -16,7 +16,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-4">
               <img 
                 src="/logo-dark.png" 
-                alt="Kaveramma Fantasy Cricket" 
+                alt="Kaveramma" 
                 className="h-14 w-auto object-contain"
               />
             </Link>

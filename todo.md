@@ -254,3 +254,11 @@
 - [x] Add team/founder information if applicable
 - [x] Ensure brand name is "Kaveramma" (not "Kaveramma Fantasy Cricket")
 - [x] Create engaging visual layout with modern design
+
+
+## Fix Logo Display Across All Pages
+- [x] Check Layout component for header logo
+- [x] Check Footer component for footer logo
+- [x] Verify logo file path is correct (/logo-dark.png)
+- [x] Test logo display on all pages (Home, About, FAQ, Contact, etc.)
+- [x] Ensure logo is visible on both light and dark backgrounds
