@@ -11,13 +11,18 @@ import { useState } from "react";
 
 // Animation variants
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] as const } }
 };
 
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } }
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] as const } }
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] as const } }
 };
 
 const staggerContainer = {
@@ -32,6 +37,196 @@ const scaleIn = {
   hidden: { opacity: 0, scale: 0.9 },
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
 };
+
+// Cricket Scene Illustration with Stadium, Stumps, and Player
+const CricketSceneIllustration = () => (
+  <div className="relative w-full h-full flex items-center justify-center">
+    {/* Stadium/Field Background */}
+    <motion.div 
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="absolute inset-0 flex items-center justify-center"
+    >
+      <svg viewBox="0 0 400 400" className="w-full h-full max-w-md">
+        {/* Outer stadium ring */}
+        <defs>
+          <linearGradient id="fieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#22C55E" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#16A34A" stopOpacity="0.2" />
+          </linearGradient>
+          <linearGradient id="pitchGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#FDE68A" />
+            <stop offset="100%" stopColor="#FCD34D" />
+          </linearGradient>
+          <linearGradient id="jerseyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#3B82F6" />
+            <stop offset="100%" stopColor="#2563EB" />
+          </linearGradient>
+        </defs>
+        
+        {/* Cricket field oval */}
+        <ellipse cx="200" cy="200" rx="180" ry="160" fill="url(#fieldGradient)" stroke="#22C55E" strokeWidth="3" strokeDasharray="10 5" />
+        
+        {/* Inner circle (30-yard) */}
+        <ellipse cx="200" cy="200" rx="100" ry="90" fill="none" stroke="#22C55E" strokeWidth="2" strokeDasharray="8 4" opacity="0.6" />
+        
+        {/* Pitch rectangle */}
+        <rect x="185" y="120" width="30" height="160" rx="2" fill="url(#pitchGradient)" />
+        
+        {/* Crease lines */}
+        <line x1="175" y1="140" x2="225" y2="140" stroke="#8B4513" strokeWidth="2" />
+        <line x1="175" y1="260" x2="225" y2="260" stroke="#8B4513" strokeWidth="2" />
+        
+        {/* Stumps at both ends */}
+        {/* Top stumps */}
+        <rect x="193" y="125" width="3" height="20" fill="#8B4513" />
+        <rect x="198" y="125" width="3" height="20" fill="#8B4513" />
+        <rect x="203" y="125" width="3" height="20" fill="#8B4513" />
+        <rect x="191" y="123" width="18" height="3" fill="#DC2626" rx="1" />
+        
+        {/* Bottom stumps */}
+        <rect x="193" y="255" width="3" height="20" fill="#8B4513" />
+        <rect x="198" y="255" width="3" height="20" fill="#8B4513" />
+        <rect x="203" y="255" width="3" height="20" fill="#8B4513" />
+        <rect x="191" y="253" width="18" height="3" fill="#DC2626" rx="1" />
+      </svg>
+    </motion.div>
+
+    {/* Batsman */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      className="absolute"
+      style={{ bottom: '25%', left: '50%', transform: 'translateX(-50%)' }}
+    >
+      <svg viewBox="0 0 100 150" className="w-24 h-36 md:w-32 md:h-48">
+        <defs>
+          <linearGradient id="helmetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#3B82F6" />
+            <stop offset="100%" stopColor="#1D4ED8" />
+          </linearGradient>
+          <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FBBF24" />
+            <stop offset="100%" stopColor="#F59E0B" />
+          </linearGradient>
+        </defs>
+        
+        {/* Helmet */}
+        <ellipse cx="50" cy="20" rx="18" ry="16" fill="url(#helmetGrad)" />
+        <rect x="32" y="18" width="36" height="8" fill="url(#helmetGrad)" />
+        <rect x="38" y="26" width="24" height="5" fill="#1E3A5F" opacity="0.6" />
+        
+        {/* Face */}
+        <ellipse cx="50" cy="30" rx="10" ry="8" fill="url(#skinTone)" />
+        
+        {/* Body - Jersey */}
+        <path d="M32 45 L38 38 L62 38 L68 45 L72 85 L28 85 Z" fill="url(#helmetGrad)" />
+        <text x="50" y="68" textAnchor="middle" fill="white" fontSize="14" fontWeight="bold">K</text>
+        
+        {/* Arms */}
+        <path d="M32 48 L15 70 L20 75 L38 58" fill="url(#skinTone)" />
+        <path d="M68 48 L85 60 L88 70 L70 58" fill="url(#skinTone)" />
+        
+        {/* Bat */}
+        <rect x="82" y="55" width="5" height="35" rx="1" fill="#DEB887" transform="rotate(20 85 72)" />
+        <rect x="80" y="48" width="6" height="12" rx="1" fill="#8B4513" transform="rotate(20 83 54)" />
+        
+        {/* Pants */}
+        <path d="M28 85 L25 120 L40 120 L50 90 L60 120 L75 120 L72 85 Z" fill="#1E3A5F" />
+        
+        {/* Pads */}
+        <rect x="26" y="115" width="14" height="25" rx="3" fill="#F3F4F6" />
+        <rect x="60" y="115" width="14" height="25" rx="3" fill="#F3F4F6" />
+        
+        {/* Shoes */}
+        <ellipse cx="33" cy="145" rx="10" ry="5" fill="#1F2937" />
+        <ellipse cx="67" cy="145" rx="10" ry="5" fill="#1F2937" />
+      </svg>
+    </motion.div>
+
+    {/* Animated Cricket Ball */}
+    <motion.div
+      animate={{ 
+        x: [0, 50, 100, 50, 0],
+        y: [0, -30, 0, 30, 0],
+        rotate: [0, 180, 360, 540, 720]
+      }}
+      transition={{ 
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }}
+      className="absolute top-16 right-16 md:top-20 md:right-24"
+    >
+      <svg viewBox="0 0 50 50" className="w-10 h-10 md:w-14 md:h-14 drop-shadow-lg">
+        <circle cx="25" cy="25" r="23" fill="#DC2626" />
+        <path d="M8 25 Q25 15 42 25" stroke="white" strokeWidth="2" fill="none" />
+        <path d="M8 25 Q25 35 42 25" stroke="white" strokeWidth="2" fill="none" />
+        {/* Stitches */}
+        <circle cx="12" cy="22" r="1.5" fill="white" />
+        <circle cx="18" cy="19" r="1.5" fill="white" />
+        <circle cx="25" cy="17" r="1.5" fill="white" />
+        <circle cx="32" cy="19" r="1.5" fill="white" />
+        <circle cx="38" cy="22" r="1.5" fill="white" />
+        <circle cx="12" cy="28" r="1.5" fill="white" />
+        <circle cx="18" cy="31" r="1.5" fill="white" />
+        <circle cx="25" cy="33" r="1.5" fill="white" />
+        <circle cx="32" cy="31" r="1.5" fill="white" />
+        <circle cx="38" cy="28" r="1.5" fill="white" />
+      </svg>
+    </motion.div>
+
+    {/* Second Ball - smaller, different animation */}
+    <motion.div
+      animate={{ 
+        y: [0, -20, 0],
+        rotate: [0, -360]
+      }}
+      transition={{ 
+        y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+        rotate: { duration: 6, repeat: Infinity, ease: "linear" }
+      }}
+      className="absolute bottom-24 left-8 md:bottom-32 md:left-12"
+    >
+      <svg viewBox="0 0 50 50" className="w-7 h-7 md:w-9 md:h-9 drop-shadow-md opacity-80">
+        <circle cx="25" cy="25" r="23" fill="#DC2626" />
+        <path d="M8 25 Q25 15 42 25" stroke="white" strokeWidth="2" fill="none" />
+        <path d="M8 25 Q25 35 42 25" stroke="white" strokeWidth="2" fill="none" />
+      </svg>
+    </motion.div>
+
+    {/* Feature badges - Real information only */}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.8 }}
+      className="absolute top-8 right-4 md:top-12 md:right-8 bg-white rounded-xl shadow-lg p-3 border border-border/50"
+    >
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center">
+          <Shield className="w-4 h-4 text-green-600" />
+        </div>
+        <span className="text-sm font-semibold text-foreground">Free to Play</span>
+      </div>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 1 }}
+      className="absolute bottom-16 left-4 md:bottom-20 md:left-8 bg-white rounded-xl shadow-lg p-3 border border-border/50"
+    >
+      <div className="flex items-center space-x-2">
+        <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+          <Target className="w-4 h-4 text-blue-600" />
+        </div>
+        <span className="text-sm font-semibold text-foreground">Skill-Based</span>
+      </div>
+    </motion.div>
+  </div>
+);
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
@@ -59,7 +254,7 @@ export default function Home() {
     {
       icon: Users,
       title: "Community Driven",
-      description: "Join thousands of cricket enthusiasts across India.",
+      description: "Join cricket enthusiasts from across India.",
       color: "text-primary"
     },
     {
@@ -90,14 +285,14 @@ export default function Home() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="sticky top-0 z-50 w-full glass border-b border-border/50"
+        className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/50"
       >
         <div className="container flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center space-x-3 group">
               <div className="relative">
-                <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-soft">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md">
                   <span className="text-white font-bold text-lg">K</span>
                 </div>
               </div>
@@ -125,19 +320,19 @@ export default function Home() {
           <div className="flex items-center space-x-3">
             {/* Compliance Badges */}
             <div className="hidden md:flex items-center space-x-2">
-              <div className="flex items-center space-x-1 px-2 py-1 bg-primary/10 rounded-full">
-                <span className="text-xs font-bold text-primary">18+</span>
+              <div className="flex items-center space-x-1 px-2.5 py-1 bg-red-50 border border-red-200 rounded-full">
+                <span className="text-xs font-bold text-red-600">18+</span>
               </div>
-              <div className="flex items-center space-x-1 px-2 py-1 bg-secondary/10 rounded-full">
-                <Shield className="w-3 h-3 text-secondary" />
-                <span className="text-xs font-medium text-secondary">Fair Play</span>
+              <div className="flex items-center space-x-1 px-2.5 py-1 bg-green-50 border border-green-200 rounded-full">
+                <Shield className="w-3 h-3 text-green-600" />
+                <span className="text-xs font-medium text-green-600">Fair Play</span>
               </div>
             </div>
 
             {/* Auth Buttons */}
             {isAuthenticated ? (
               <Link href="/dashboard">
-                <Button className="gradient-primary text-white shadow-soft btn-modern">
+                <Button className="bg-gradient-to-r from-primary to-primary/90 text-white shadow-md hover:shadow-lg transition-shadow">
                   Dashboard
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </Button>
@@ -150,7 +345,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/register">
-                  <Button className="gradient-primary text-white shadow-soft btn-modern">
+                  <Button className="bg-gradient-to-r from-primary to-primary/90 text-white shadow-md hover:shadow-lg transition-shadow">
                     Get Started
                   </Button>
                 </Link>
@@ -173,7 +368,7 @@ export default function Home() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-t border-border/50 bg-background"
+            className="lg:hidden border-t border-border/50 bg-white"
           >
             <nav className="container py-4 space-y-2">
               {["About Us", "How to Play", "FAQ", "Blog", "Contact"].map((item) => (
@@ -189,56 +384,61 @@ export default function Home() {
       </motion.header>
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative overflow-hidden gradient-hero">
-          {/* Background Elements */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float delay-200" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+        {/* Hero Section - Split Layout with Cricket Scene */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-green-50/20">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-40">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.08) 1px, transparent 0)`,
+              backgroundSize: '32px 32px'
+            }} />
           </div>
 
-          <div className="container relative py-20 lg:py-32">
-            <div className="max-w-4xl mx-auto text-center">
+          <div className="container relative py-16 lg:py-20">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+              {/* Left Side - Text Content */}
               <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={staggerContainer}
+                className="text-center lg:text-left"
               >
                 {/* Badge */}
-                <motion.div variants={fadeInUp} className="inline-flex items-center space-x-2 px-4 py-2 bg-white/80 backdrop-blur rounded-full shadow-soft mb-8">
-                  <Star className="w-4 h-4 text-accent fill-accent" />
+                <motion.div variants={fadeInLeft} className="inline-flex items-center space-x-2 px-4 py-2 bg-white border border-border/50 rounded-full shadow-sm mb-6">
+                  <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span className="text-sm font-medium text-foreground">India's Free Fantasy Cricket Platform</span>
                 </motion.div>
 
                 {/* Main Heading */}
                 <motion.h1 
-                  variants={fadeInUp}
+                  variants={fadeInLeft}
                   className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
                 >
                   <span className="text-foreground">Fantasy Cricket</span>
                   <br />
-                  <span className="text-gradient">for Everyone</span>
+                  <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                    for Everyone
+                  </span>
                 </motion.h1>
 
                 {/* Subheading */}
                 <motion.p 
-                  variants={fadeInUp}
-                  className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+                  variants={fadeInLeft}
+                  className="text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8"
                 >
                   Build your dream cricket team, compete with friends, and master fantasy cricket strategy—completely free with no real money involved!
                 </motion.p>
 
                 {/* CTA Buttons */}
-                <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <motion.div variants={fadeInLeft} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
                   <Link href={isAuthenticated ? "/dashboard" : "/register"}>
-                    <Button size="lg" className="gradient-primary text-white shadow-soft-lg btn-modern px-8 py-6 text-lg">
-                      <Play className="w-5 h-5 mr-2" />
+                    <Button size="lg" className="bg-gradient-to-r from-primary to-primary/90 text-white shadow-lg hover:shadow-xl transition-all px-8 py-6 text-lg group">
+                      <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                       Start Playing Free
                     </Button>
                   </Link>
                   <Link href="/how-to-play">
-                    <Button size="lg" variant="outline" className="bg-white/80 backdrop-blur border-border/50 px-8 py-6 text-lg">
+                    <Button size="lg" variant="outline" className="border-2 px-8 py-6 text-lg">
                       Learn How to Play
                       <ChevronRight className="w-5 h-5 ml-2" />
                     </Button>
@@ -246,25 +446,35 @@ export default function Home() {
                 </motion.div>
 
                 {/* Trust Badges */}
-                <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center gap-6">
+                <motion.div variants={fadeInLeft} className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                   {[
-                    { icon: CheckCircle2, text: "100% Free", color: "text-primary" },
-                    { icon: Shield, text: "No Real Money", color: "text-secondary" },
-                    { icon: Target, text: "Skill-Based", color: "text-accent" }
+                    { icon: CheckCircle2, text: "100% Free", color: "text-primary bg-primary/10" },
+                    { icon: Shield, text: "No Real Money", color: "text-green-600 bg-green-100" },
+                    { icon: Target, text: "Skill-Based", color: "text-orange-600 bg-orange-100" }
                   ].map((badge, i) => (
-                    <div key={i} className="flex items-center space-x-2 px-4 py-2 bg-white/60 backdrop-blur rounded-full">
-                      <badge.icon className={`w-5 h-5 ${badge.color}`} />
-                      <span className="text-sm font-medium text-foreground">{badge.text}</span>
+                    <div key={i} className={`flex items-center space-x-2 px-4 py-2 rounded-full ${badge.color}`}>
+                      <badge.icon className="w-4 h-4" />
+                      <span className="text-sm font-medium">{badge.text}</span>
                     </div>
                   ))}
                 </motion.div>
+              </motion.div>
+
+              {/* Right Side - Cricket Scene Illustration */}
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={fadeInRight}
+                className="relative h-[400px] lg:h-[480px]"
+              >
+                <CricketSceneIllustration />
               </motion.div>
             </div>
           </div>
         </section>
 
         {/* Features Section */}
-        <section className="py-20 lg:py-28 bg-background">
+        <section className="py-20 lg:py-28 bg-white">
           <div className="container">
             <motion.div 
               initial="hidden"
@@ -295,13 +505,16 @@ export default function Home() {
                 <motion.div
                   key={index}
                   variants={scaleIn}
-                  className="group p-6 bg-white rounded-2xl border border-border/50 shadow-soft card-hover"
+                  className="group p-6 bg-white rounded-2xl border border-border/50 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className={`w-12 h-12 rounded-xl ${
                     index % 3 === 0 ? 'bg-primary/10' : 
-                    index % 3 === 1 ? 'bg-secondary/10' : 'bg-accent/10'
+                    index % 3 === 1 ? 'bg-green-100' : 'bg-orange-100'
                   } flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <feature.icon className={`w-6 h-6 ${feature.color}`} />
+                    <feature.icon className={`w-6 h-6 ${
+                      index % 3 === 0 ? 'text-primary' : 
+                      index % 3 === 1 ? 'text-green-600' : 'text-orange-600'
+                    }`} />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">{feature.description}</p>
@@ -312,7 +525,7 @@ export default function Home() {
         </section>
 
         {/* How It Works Section */}
-        <section className="py-20 lg:py-28 bg-muted/30">
+        <section className="py-20 lg:py-28 bg-slate-50">
           <div className="container">
             <motion.div 
               initial="hidden"
@@ -321,7 +534,7 @@ export default function Home() {
               variants={staggerContainer}
               className="text-center mb-16"
             >
-              <motion.span variants={fadeInUp} className="text-sm font-semibold text-secondary uppercase tracking-wider">
+              <motion.span variants={fadeInUp} className="text-sm font-semibold text-green-600 uppercase tracking-wider">
                 Getting Started
               </motion.span>
               <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl font-bold mt-3 mb-4">
@@ -343,9 +556,9 @@ export default function Home() {
                 <motion.div
                   key={index}
                   variants={fadeInUp}
-                  className="relative p-6 bg-white rounded-2xl border border-border/50 shadow-soft text-center card-hover"
+                  className="relative p-6 bg-white rounded-2xl border border-border/50 shadow-sm text-center hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="text-5xl font-bold text-gradient opacity-20 mb-2">
+                  <div className="text-5xl font-bold bg-gradient-to-br from-primary/20 to-green-500/20 bg-clip-text text-transparent mb-2">
                     {step.number}
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
@@ -364,14 +577,14 @@ export default function Home() {
 
         {/* CTA Section */}
         {!isAuthenticated && (
-          <section className="py-20 lg:py-28">
+          <section className="py-20 lg:py-28 bg-white">
             <div className="container">
               <motion.div 
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={scaleIn}
-                className="relative overflow-hidden rounded-3xl gradient-primary p-10 lg:p-16 text-center"
+                className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary via-primary/90 to-green-600 p-10 lg:p-16 text-center"
               >
                 {/* Background decoration */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -384,10 +597,10 @@ export default function Home() {
                     Ready to Start Your Journey?
                   </h2>
                   <p className="text-white/80 max-w-xl mx-auto mb-8">
-                    Join thousands of cricket fans playing fantasy cricket for free. No risk, all fun!
+                    Join cricket fans playing fantasy cricket for free. No risk, all fun!
                   </p>
                   <Link href="/register">
-                    <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-soft-lg px-8 py-6 text-lg">
+                    <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-lg px-8 py-6 text-lg">
                       Create Free Account
                       <ChevronRight className="w-5 h-5 ml-2" />
                     </Button>
@@ -400,7 +613,7 @@ export default function Home() {
       </main>
 
       {/* Modern Footer */}
-      <footer className="bg-foreground text-white">
+      <footer className="bg-slate-900 text-white">
         <div className="container py-12 lg:py-16">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Brand */}
@@ -418,10 +631,10 @@ export default function Home() {
                 Fantasy Cricket for Everyone. 100% free, skill-based entertainment platform.
               </p>
               <div className="flex items-center space-x-3">
-                <div className="px-3 py-1 bg-white/10 rounded-full text-xs font-bold">18+</div>
-                <div className="flex items-center space-x-1 px-3 py-1 bg-white/10 rounded-full">
-                  <Shield className="w-3 h-3" />
-                  <span className="text-xs font-medium">Fair Play</span>
+                <div className="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-xs font-bold text-red-400">18+</div>
+                <div className="flex items-center space-x-1 px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full">
+                  <Shield className="w-3 h-3 text-green-400" />
+                  <span className="text-xs font-medium text-green-400">Fair Play</span>
                 </div>
               </div>
             </div>

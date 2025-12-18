@@ -138,3 +138,16 @@
 - [x] Update dashboard with modern card layouts
 - [x] Add scroll-triggered animations
 - [x] Improve typography and visual hierarchy
+
+## Hero Section Redesign
+- [ ] Create split layout (text left, image right)
+- [ ] Add cricket player illustration
+- [ ] Add animated cricket ball/bat graphics
+- [ ] Add background pattern/texture
+- [ ] Apply new gradient colors
+
+## Hero Section Improvements
+- [x] Improve player illustration style (more polished)
+- [x] Add more cricket elements (stumps, field)
+- [x] Remove all fake/placeholder stats
+- [x] Keep only authentic content
