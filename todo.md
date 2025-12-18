@@ -215,3 +215,8 @@
 - [x] FAQ preview section (top questions)
 - [x] Enhanced CTA section
 - [x] Smooth scroll animations throughout
+
+
+## Bug Fix - Favicon Visibility
+- [x] Fix favicon not visible in dark browser tabs
+- [x] Add white background to favicon for visibility
