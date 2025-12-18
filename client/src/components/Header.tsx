@@ -25,14 +25,12 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-bold text-lg text-gray-900">KAVERAMMA</div>
-                <div className="text-xs text-gray-500 -mt-0.5">Fantasy Cricket</div>
-              </div>
+            <a className="flex items-center">
+              <img 
+                src="/logo-main.png" 
+                alt="Kaveramma Fantasy Cricket" 
+                className="h-14 w-auto object-contain"
+              />
             </a>
           </Link>
 

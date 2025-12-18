@@ -290,18 +290,12 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center space-x-3 group">
-              <div className="relative">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-md">
-                  <span className="text-white font-bold text-lg">K</span>
-                </div>
-              </div>
-              <div className="hidden sm:block">
-                <div className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
-                  KAVERAMMA
-                </div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
-              </div>
+            <a className="flex items-center">
+              <img 
+                src="/logo-main.png" 
+                alt="Kaveramma Fantasy Cricket" 
+                className="h-14 w-auto object-contain"
+              />
             </a>
           </Link>
 
@@ -618,14 +612,12 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Brand */}
             <div className="lg:col-span-1">
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">K</span>
-                </div>
-                <div>
-                  <div className="font-bold text-lg">KAVERAMMA</div>
-                  <div className="text-xs text-white/60">Fantasy Cricket</div>
-                </div>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/logo-main.png" 
+                  alt="Kaveramma Fantasy Cricket" 
+                  className="h-14 w-auto object-contain brightness-0 invert"
+                />
               </div>
               <p className="text-white/60 text-sm mb-4">
                 Fantasy Cricket for Everyone. 100% free, skill-based entertainment platform.
