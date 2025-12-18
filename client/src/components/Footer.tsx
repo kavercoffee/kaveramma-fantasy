@@ -13,14 +13,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/">
-              <a className="flex items-center mb-4">
-                <img 
-                  src="/logo.png" 
-                  alt="Kaveramma Fantasy Cricket" 
-                  className="h-14 w-auto object-contain"
-                />
-              </a>
+            <Link href="/" className="flex items-center mb-4">
+              <img 
+                src="/logo.png" 
+                alt="Kaveramma Fantasy Cricket" 
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-white/60 text-sm mb-4">
               Fantasy Cricket for Everyone. 100% free, skill-based entertainment platform.
@@ -40,8 +38,11 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((item) => (
                 <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                    <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
+                  <Link 
+                    href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="text-white/60 hover:text-white text-sm transition-colors"
+                  >
+                    {item}
                   </Link>
                 </li>
               ))}
@@ -54,8 +55,11 @@ export default function Footer() {
             <ul className="space-y-2">
               {legalLinks.map((item) => (
                 <li key={item}>
-                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
-                    <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
+                  <Link 
+                    href={`/${item.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}
+                    className="text-white/60 hover:text-white text-sm transition-colors"
+                  >
+                    {item}
                   </Link>
                 </li>
               ))}

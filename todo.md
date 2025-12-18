@@ -190,3 +190,9 @@
 - [x] Fix footer logo not visible (dark background issue)
 - [x] Make homepage use shared Layout component
 - [x] Ensure all pages have identical header and footer
+
+
+## Bug Fix - Nested Anchor Tags
+- [x] Fix nested anchor tag error in Header component
+- [x] Fix nested anchor tag error in Home page
+- [x] Fix nested anchor tag error in Footer component

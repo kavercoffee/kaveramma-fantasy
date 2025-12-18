@@ -289,23 +289,23 @@ export default function Home() {
       >
         <div className="container flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center">
-              <img 
-                src="/logo-main.png" 
-                alt="Kaveramma Fantasy Cricket" 
-                className="h-14 w-auto object-contain"
-              />
-            </a>
+          <Link href="/" className="flex items-center">
+            <img 
+              src="/logo-main.png" 
+              alt="Kaveramma Fantasy Cricket" 
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
             {["About Us", "How to Play", "FAQ", "Blog", "Contact"].map((item) => (
-              <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                <a className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-all">
-                  {item}
-                </a>
+              <Link 
+                key={item} 
+                href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-all"
+              >
+                {item}
               </Link>
             ))}
           </nav>
@@ -366,10 +366,12 @@ export default function Home() {
           >
             <nav className="container py-4 space-y-2">
               {["About Us", "How to Play", "FAQ", "Blog", "Contact"].map((item) => (
-                <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                  <a className="block px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-all">
-                    {item}
-                  </a>
+                <Link 
+                  key={item} 
+                  href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="block px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-all"
+                >
+                  {item}
                 </Link>
               ))}
             </nav>
@@ -637,8 +639,11 @@ export default function Home() {
               <ul className="space-y-2">
                 {["About Us", "How to Play", "FAQ", "Blog", "Contact"].map((item) => (
                   <li key={item}>
-                    <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                      <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
+                    <Link 
+                      href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="text-white/60 hover:text-white text-sm transition-colors"
+                    >
+                      {item}
                     </Link>
                   </li>
                 ))}
@@ -651,8 +656,11 @@ export default function Home() {
               <ul className="space-y-2">
                 {["Terms & Conditions", "Privacy Policy", "Fair Play Policy", "Responsible Gaming"].map((item) => (
                   <li key={item}>
-                    <Link href={`/${item.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
-                      <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
+                    <Link 
+                      href={`/${item.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}
+                      className="text-white/60 hover:text-white text-sm transition-colors"
+                    >
+                      {item}
                     </Link>
                   </li>
                 ))}
