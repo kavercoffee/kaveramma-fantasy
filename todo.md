@@ -26,16 +26,16 @@
 
 ## Informational Pages
 - [x] Build Homepage with hero section and features
-- [ ] Create About Us page with company information
-- [ ] Create How To Play tutorial page
-- [ ] Create FAQ page with common questions
-- [ ] Create Terms and Conditions page
-- [ ] Create Privacy Policy page
-- [ ] Create Fair Play Policy page
-- [ ] Create Responsible Gaming page
-- [ ] Create Blog listing page
+- [x] Create About Us page with company information
+- [x] Create How To Play tutorial page
+- [x] Create FAQ page with common questions
+- [x] Create Terms and Conditions page
+- [x] Create Privacy Policy page
+- [x] Create Fair Play Policy page
+- [x] Create Responsible Gaming page
+- [x] Create Blog listing page
 - [ ] Create individual Blog post page
-- [ ] Create Contact Us page with form
+- [x] Create Contact Us page with form
 
 ## User Authentication Pages
 - [x] Build Login page with email/password form
@@ -151,3 +151,16 @@
 - [x] Add more cricket elements (stumps, field)
 - [x] Remove all fake/placeholder stats
 - [x] Keep only authentic content
+
+
+## Detailed Informational Pages
+- [x] About Us page (company story, mission, values, team)
+- [x] How to Play page (step-by-step guide with visuals)
+- [x] FAQ page (comprehensive Q&A)
+- [x] Terms & Conditions page (legal terms)
+- [x] Privacy Policy page (data handling)
+- [x] Fair Play Policy page (gaming rules)
+- [x] Responsible Gaming page (safe gaming practices)
+- [x] Blog page (blog listing)
+- [x] Contact Us page (form and company details)
+- [x] Update App.tsx with all routes
