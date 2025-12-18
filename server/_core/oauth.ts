@@ -10,6 +10,13 @@ function getQueryParam(req: Request, key: string): string | undefined {
 }
 
 export function registerOAuthRoutes(app: Express) {
+  // OAuth callback disabled - using custom authentication
+  app.get("/api/oauth/callback", async (req: Request, res: Response) => {
+    res.status(404).json({ error: "OAuth not enabled. Please use custom authentication." });
+    return;
+  });
+
+  /* Original OAuth callback - commented out for custom authentication
   app.get("/api/oauth/callback", async (req: Request, res: Response) => {
     const code = getQueryParam(req, "code");
     const state = getQueryParam(req, "state");
@@ -50,4 +57,5 @@ export function registerOAuthRoutes(app: Express) {
       res.status(500).json({ error: "OAuth callback failed" });
     }
   });
+  */
 }

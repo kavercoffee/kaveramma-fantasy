@@ -19,8 +19,8 @@ const isNonEmptyString = (value: unknown): value is string =>
   typeof value === "string" && value.length > 0;
 
 export type SessionPayload = {
-  openId: string;
-  appId: string;
+  userId: number;
+  email: string;
   name: string;
 };
 
@@ -165,13 +165,13 @@ class SDKServer {
    * const sessionToken = await sdk.createSessionToken(userInfo.openId);
    */
   async createSessionToken(
-    openId: string,
-    options: { expiresInMs?: number; name?: string } = {}
+    userId: number,
+    options: { expiresInMs?: number; name?: string; email?: string } = {}
   ): Promise<string> {
     return this.signSession(
       {
-        openId,
-        appId: ENV.appId,
+        userId,
+        email: options.email || "",
         name: options.name || "",
       },
       options
@@ -188,8 +188,8 @@ class SDKServer {
     const secretKey = this.getSessionSecret();
 
     return new SignJWT({
-      openId: payload.openId,
-      appId: payload.appId,
+      userId: payload.userId,
+      email: payload.email,
       name: payload.name,
     })
       .setProtectedHeader({ alg: "HS256", typ: "JWT" })
@@ -199,7 +199,7 @@ class SDKServer {
 
   async verifySession(
     cookieValue: string | undefined | null
-  ): Promise<{ openId: string; appId: string; name: string } | null> {
+  ): Promise<SessionPayload | null> {
     if (!cookieValue) {
       console.warn("[Auth] Missing session cookie");
       return null;
@@ -210,11 +210,11 @@ class SDKServer {
       const { payload } = await jwtVerify(cookieValue, secretKey, {
         algorithms: ["HS256"],
       });
-      const { openId, appId, name } = payload as Record<string, unknown>;
+      const { userId, email, name } = payload as Record<string, unknown>;
 
       if (
-        !isNonEmptyString(openId) ||
-        !isNonEmptyString(appId) ||
+        typeof userId !== "number" ||
+        !isNonEmptyString(email) ||
         !isNonEmptyString(name)
       ) {
         console.warn("[Auth] Session payload missing required fields");
@@ -222,8 +222,8 @@ class SDKServer {
       }
 
       return {
-        openId,
-        appId,
+        userId,
+        email,
         name,
       };
     } catch (error) {
@@ -266,36 +266,17 @@ class SDKServer {
       throw ForbiddenError("Invalid session cookie");
     }
 
-    const sessionUserId = session.openId;
+    // Custom authentication: session contains userId
+    const sessionUserId = session.userId;
     const signedInAt = new Date();
-    let user = await db.getUserByOpenId(sessionUserId);
-
-    // If user not in DB, sync from OAuth server automatically
-    if (!user) {
-      try {
-        const userInfo = await this.getUserInfoWithJwt(sessionCookie ?? "");
-        await db.upsertUser({
-          openId: userInfo.openId,
-          name: userInfo.name || null,
-          email: userInfo.email ?? null,
-          loginMethod: userInfo.loginMethod ?? userInfo.platform ?? null,
-          lastSignedIn: signedInAt,
-        });
-        user = await db.getUserByOpenId(userInfo.openId);
-      } catch (error) {
-        console.error("[Auth] Failed to sync user from OAuth:", error);
-        throw ForbiddenError("Failed to sync user info");
-      }
-    }
+    let user = await db.getUserById(sessionUserId);
 
     if (!user) {
       throw ForbiddenError("User not found");
     }
 
-    await db.upsertUser({
-      openId: user.openId,
-      lastSignedIn: signedInAt,
-    });
+    // Update last signed in timestamp
+    await db.updateLastSignedIn(user.id);
 
     return user;
   }
