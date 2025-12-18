@@ -1,141 +1,89 @@
 import { Link } from "wouter";
+import { Shield } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
-    company: [
-      { href: "/about", label: "About Us" },
-      { href: "/how-to-play", label: "How to Play" },
-      { href: "/blog", label: "Blog" },
-      { href: "/contact", label: "Contact Us" },
-    ],
-    legal: [
-      { href: "/terms-and-conditions", label: "Terms & Conditions" },
-      { href: "/privacy-policy", label: "Privacy Policy" },
-      { href: "/fair-play", label: "Fair Play Policy" },
-      { href: "/responsible-gaming", label: "Responsible Gaming" },
-    ],
-    support: [
-      { href: "/faq", label: "FAQ" },
-      { href: "/contact", label: "Help Center" },
-    ],
-  };
-
-  const restrictedStates = [
-    "Andhra Pradesh", "Assam", "Nagaland", "Odisha", "Sikkim", "Telangana"
-  ];
+  const quickLinks = ["About Us", "How to Play", "FAQ", "Blog", "Contact"];
+  const legalLinks = ["Terms & Conditions", "Privacy Policy", "Fair Play Policy", "Responsible Gaming"];
 
   return (
     <footer className="bg-slate-900 text-white">
-      {/* Main Footer */}
       <div className="container py-12 lg:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="lg:col-span-1">
             <Link href="/">
-              <a className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">K</span>
-                </div>
-                <div>
-                  <div className="font-bold text-lg">KAVERAMMA</div>
-                  <div className="text-xs text-white/60 -mt-0.5">Fantasy Cricket</div>
-                </div>
+              <a className="flex items-center mb-4">
+                <img 
+                  src="/logo.png" 
+                  alt="Kaveramma Fantasy Cricket" 
+                  className="h-14 w-auto object-contain"
+                />
               </a>
             </Link>
-            <p className="text-sm text-white/60 mb-4">
-              India's free-to-play fantasy cricket platform. Learn, play, and enjoy cricket strategy without any financial risk.
+            <p className="text-white/60 text-sm mb-4">
+              Fantasy Cricket for Everyone. 100% free, skill-based entertainment platform.
             </p>
-            {/* Badges */}
             <div className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-red-500/20 border border-red-500/50">
-                <span className="text-red-400 font-bold text-xs">18+</span>
-              </div>
-              <div className="flex items-center space-x-1.5 px-3 py-1.5 bg-green-500/20 border border-green-500/50 rounded-full">
-                <svg className="w-4 h-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                <span className="text-green-400 text-xs font-medium">Fair Play</span>
+              <div className="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-xs font-bold text-red-400">18+</div>
+              <div className="flex items-center space-x-1 px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full">
+                <Shield className="w-3 h-3 text-green-400" />
+                <span className="text-xs font-medium text-green-400">Fair Play</span>
               </div>
             </div>
           </div>
 
-          {/* Company Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-white/60 hover:text-white transition-colors">
-                      {link.label}
-                    </a>
+              {quickLinks.map((item) => (
+                <li key={item}>
+                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}>
+                    <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Legal */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-white/60 hover:text-white transition-colors">
-                      {link.label}
-                    </a>
+              {legalLinks.map((item) => (
+                <li key={item}>
+                  <Link href={`/${item.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
+                    <a className="text-white/60 hover:text-white text-sm transition-colors">{item}</a>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Support Links */}
+          {/* Company */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Support</h4>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href}>
-                    <a className="text-sm text-white/60 hover:text-white transition-colors">
-                      {link.label}
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            
-            {/* Company Info */}
-            <div className="mt-6 pt-4 border-t border-white/10">
-              <p className="text-xs text-white/40 leading-relaxed">
-                <strong className="text-white/60">KAVERAMMA COFFEE CURING WORKS PVT LTD</strong><br />
-                CIN: U10792KA2024PTC186508
-              </p>
-            </div>
+            <h4 className="font-semibold mb-4">Company</h4>
+            <p className="text-white/60 text-sm mb-2">
+              KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED
+            </p>
+            <p className="text-white/40 text-xs">
+              CIN: U10792KA2024PTC186508
+            </p>
           </div>
         </div>
-      </div>
 
-      {/* Legal Disclaimer */}
-      <div className="border-t border-white/10">
-        <div className="container py-6">
-          <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-6">
-            <p className="text-sm text-red-300 text-center">
-              <strong>Legal Disclaimer:</strong> This platform is NOT available in {restrictedStates.join(", ")}. 
-              Only users 18 years and older are permitted. This is a skill-based, free-to-play platform with no real money involved.
+        {/* Disclaimer */}
+        <div className="pt-8 border-t border-white/10">
+          <div className="bg-white/5 rounded-xl p-4 mb-6">
+            <p className="text-white/60 text-xs leading-relaxed">
+              <strong className="text-white/80">Legal Disclaimer:</strong> This platform is NOT available in Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, and Sikkim. Only users 18 years and older are permitted. This is a skill-based, free-to-play platform with no real money involved. No financial transactions, deposits, or withdrawals are supported.
             </p>
           </div>
-          
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-white/40">
-              © {currentYear} Kaveramma Fantasy Cricket. All rights reserved.
-            </p>
-            <p className="text-xs text-white/30">
-              Fantasy Cricket for Everyone
-            </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-white/40 text-xs">
+            <p>© {currentYear} Kaveramma Fantasy Cricket. All rights reserved.</p>
+            <p>Domain: kaverammafantasy.com</p>
           </div>
         </div>
       </div>

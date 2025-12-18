@@ -30,6 +30,7 @@ function Router() {
       
       {/* Informational Pages */}
       <Route path="/about" component={AboutUs} />
+      <Route path="/about-us" component={AboutUs} />
       <Route path="/how-to-play" component={HowToPlay} />
       <Route path="/faq" component={FAQ} />
       <Route path="/terms-and-conditions" component={TermsAndConditions} />
