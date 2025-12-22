@@ -276,3 +276,9 @@
 - [x] Hide header on mobile when banner is active
 - [x] Test banner display on mobile devices from Google
 - [x] Ensure banner doesn't show on desktop or non-Google traffic
+
+
+## Remove Close Button from Google Ads Banner
+- [x] Remove close button UI element from GoogleAdsBanner component
+- [x] Remove dismissal logic and localStorage functionality
+- [x] Update banner to be non-dismissible

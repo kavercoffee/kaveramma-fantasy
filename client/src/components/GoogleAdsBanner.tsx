@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { shouldShowGoogleAdsBanner, isBannerDismissed, dismissBanner } from "@/lib/adUtils";
+import { shouldShowGoogleAdsBanner } from "@/lib/adUtils";
 
 interface GoogleAdsBannerProps {
   onVisibilityChange?: (isVisible: boolean) => void;
@@ -12,18 +11,10 @@ export default function GoogleAdsBanner({ onVisibilityChange }: GoogleAdsBannerP
 
   useEffect(() => {
     // Check if banner should be shown
-    const shouldShow = shouldShowGoogleAdsBanner() && !isBannerDismissed();
+    const shouldShow = shouldShowGoogleAdsBanner();
     setIsVisible(shouldShow);
     onVisibilityChange?.(shouldShow);
   }, [onVisibilityChange]);
-
-  const handleDismiss = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    dismissBanner();
-    setIsVisible(false);
-    onVisibilityChange?.(false);
-  };
 
   const handleBannerClick = () => {
     // Redirect to WhatsApp link
@@ -41,15 +32,6 @@ export default function GoogleAdsBanner({ onVisibilityChange }: GoogleAdsBannerP
         transition={{ duration: 0.3 }}
         className="relative w-full lg:hidden"
       >
-        {/* Close Button */}
-        <button
-          onClick={handleDismiss}
-          className="absolute top-2 right-2 z-10 p-2 bg-black/50 hover:bg-black/70 rounded-full transition-colors"
-          aria-label="Dismiss banner"
-        >
-          <X className="w-5 h-5 text-white" />
-        </button>
-
         {/* Clickable Banner Image */}
         <div
           onClick={handleBannerClick}

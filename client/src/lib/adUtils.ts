@@ -58,20 +58,4 @@ export function shouldShowGoogleAdsBanner(): boolean {
   return isMobileDevice() && isFromGoogle();
 }
 
-/**
- * Gets or sets the banner dismissal status in localStorage
- */
-export function isBannerDismissed(): boolean {
-  if (typeof window === 'undefined') return false;
-  return localStorage.getItem('googleAdsBannerDismissed') === 'true';
-}
 
-export function dismissBanner(): void {
-  if (typeof window === 'undefined') return;
-  localStorage.setItem('googleAdsBannerDismissed', 'true');
-}
-
-export function resetBannerDismissal(): void {
-  if (typeof window === 'undefined') return;
-  localStorage.removeItem('googleAdsBannerDismissed');
-}
