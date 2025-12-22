@@ -262,3 +262,17 @@
 - [x] Verify logo file path is correct (/logo-dark.png)
 - [x] Test logo display on all pages (Home, About, FAQ, Contact, etc.)
 - [x] Ensure logo is visible on both light and dark backgrounds
+
+
+## Implement Google Ads Banner for Mobile Users from Google
+- [x] Create utility functions to detect mobile devices
+- [x] Create utility functions to detect Google referrer (referrer URL or UTM parameters)
+- [x] Create GoogleAdsBanner component with dismissible functionality
+- [x] Add banner to Layout component with conditional rendering
+- [x] Style banner for mobile responsiveness
+- [x] Convert FairPlay banner image to WebP format
+- [x] Update banner to display inline before hero section (not fixed)
+- [x] Make banner clickable to redirect to WhatsApp link
+- [x] Hide header on mobile when banner is active
+- [x] Test banner display on mobile devices from Google
+- [x] Ensure banner doesn't show on desktop or non-Google traffic
