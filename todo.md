@@ -282,3 +282,21 @@
 - [x] Remove close button UI element from GoogleAdsBanner component
 - [x] Remove dismissal logic and localStorage functionality
 - [x] Update banner to be non-dismissible
+
+
+## Replace Manus OAuth with Clerk Authentication
+- [ ] Install Clerk dependencies (@clerk/clerk-react, @clerk/clerk-sdk-node)
+- [ ] Remove Manus OAuth dependencies
+- [ ] Replace server-side authentication with Clerk
+- [ ] Update tRPC context to use Clerk
+- [ ] Replace frontend auth hooks with Clerk
+- [ ] Update login/register flows
+- [ ] Test authentication flow
+
+## Deploy to Railway
+- [x] Create railway.json configuration file
+- [x] Create Procfile for Railway
+- [x] Update package.json with Railway-specific scripts
+- [x] Document required environment variables for Railway
+- [x] Create comprehensive Railway deployment guide
+- [x] Provide Railway CLI installation and deployment instructions
