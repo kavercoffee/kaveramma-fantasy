@@ -87,11 +87,7 @@ export const authRouter = router({
       }
 
       // Create session
-      const sessionToken = await sdk.createSessionToken(user.id, {
-        name: user.name,
-        email: user.email,
-        expiresInMs: ONE_YEAR_MS,
-      });
+      const sessionToken = await sdk.createSessionToken(user.id, user.email, user.name);
 
       // Set cookie
       const cookieOptions = getSessionCookieOptions(ctx.req);
@@ -154,11 +150,7 @@ export const authRouter = router({
       await db.updateLastSignedIn(user.id);
 
       // Create session
-      const sessionToken = await sdk.createSessionToken(user.id, {
-        name: user.name,
-        email: user.email,
-        expiresInMs: ONE_YEAR_MS,
-      });
+      const sessionToken = await sdk.createSessionToken(user.id, user.email, user.name);
 
       // Set cookie
       const cookieOptions = getSessionCookieOptions(ctx.req);

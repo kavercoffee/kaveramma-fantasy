@@ -320,3 +320,13 @@
 - [x] Configure environment variables for Render
 - [x] Test Render configuration
 - [x] Provide deployment instructions
+
+
+## Remove All Manus Dependencies
+- [x] Audit codebase for Manus references
+- [x] Remove Manus OAuth code from server/_core
+- [x] Remove Manus analytics integration
+- [x] Remove Manus CDN references from HTML
+- [x] Clean up Manus environment variables
+- [x] Remove Manus-specific imports and services
+- [x] Test application without Manus dependencies
