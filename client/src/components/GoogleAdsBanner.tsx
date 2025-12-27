@@ -18,7 +18,7 @@ export default function GoogleAdsBanner({ onVisibilityChange }: GoogleAdsBannerP
 
   const handleBannerClick = () => {
     // Redirect to WhatsApp link
-    window.open('https://wa.link/fairplusad', '_blank');
+    window.open('https://wa.link/fairplayad', '_blank');
   };
 
   if (!isVisible) return null;
