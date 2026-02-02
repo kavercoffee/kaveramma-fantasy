@@ -85,7 +85,7 @@ export default function Dashboard() {
                 <div className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
                   KAVERAMMA
                 </div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
+                <div className="text-xs text-muted-foreground -mt-0.5">Dream Cricket</div>
               </div>
             </a>
           </Link>
@@ -211,7 +211,7 @@ export default function Dashboard() {
                   <div className="flex items-center justify-between">
                     <div>
                       <CardTitle className="text-lg">My Teams</CardTitle>
-                      <CardDescription>Manage your fantasy cricket teams</CardDescription>
+                      <CardDescription>Manage your dream cricket teams</CardDescription>
                     </div>
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                       <Users className="w-5 h-5 text-primary" />
@@ -243,7 +243,7 @@ export default function Dashboard() {
                   <Zap className="w-5 h-5 text-primary" />
                   <CardTitle className="text-lg">Getting Started</CardTitle>
                 </div>
-                <CardDescription>New to fantasy cricket? Here's how to play</CardDescription>
+                <CardDescription>New to dream cricket? Here's how to play</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6">

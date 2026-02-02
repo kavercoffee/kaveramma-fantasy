@@ -265,7 +265,7 @@ const features = [
   {
     icon: GraduationCap,
     title: "Learn & Improve",
-    description: "Perfect for beginners to understand fantasy cricket mechanics. Learn player selection, captain choices, and strategy without any financial risk.",
+    description: "Perfect for beginners to understand dream cricket mechanics. Learn player selection, captain choices, and strategy without any financial risk.",
     color: "blue",
     details: ["Beginner-friendly tutorials", "Strategy guides", "Player analysis tips", "Performance tracking"]
   },
@@ -286,14 +286,14 @@ const features = [
   {
     icon: Trophy,
     title: "Leaderboard Rankings",
-    description: "Compete for glory on our leaderboards. See how your fantasy cricket skills stack up against other players across India.",
+    description: "Compete for glory on our leaderboards. See how your dream cricket skills stack up against other players across India.",
     color: "yellow",
     details: ["Daily leaderboards", "Weekly rankings", "Season standings", "Achievement badges"]
   },
   {
     icon: Users,
     title: "Community Driven",
-    description: "Join a growing community of cricket enthusiasts. Share strategies, discuss matches, and learn from fellow fantasy cricket fans.",
+    description: "Join a growing community of cricket enthusiasts. Share strategies, discuss matches, and learn from fellow dream cricket fans.",
     color: "cyan",
     details: ["Active community", "Strategy discussions", "Match predictions", "Cricket insights"]
   }
@@ -342,15 +342,15 @@ const matchTypes = [
 // FAQ items
 const faqItems = [
   {
-    question: "Is Kaveramma Fantasy Cricket really free?",
-    answer: "Yes, 100% free! There are no registration fees, no contest entry fees, and no premium subscriptions. All features are available to every user at no cost. We are backed by investors who believe in fantasy cricket education."
+    question: "Is Kaveramma Dream Cricket really free?",
+    answer: "Yes, 100% free! There are no registration fees, no contest entry fees, and no premium subscriptions. All features are available to every user at no cost. We are backed by investors who believe in dream cricket education."
   },
   {
     question: "Can I win real money on this platform?",
-    answer: "No. Kaveramma Fantasy Cricket is purely for entertainment and education. There are no real money prizes, deposits, or withdrawals. Winners are recognized on our leaderboard for bragging rights only."
+    answer: "No. Kaveramma Dream Cricket is purely for entertainment and education. There are no real money prizes, deposits, or withdrawals. Winners are recognized on our leaderboard for bragging rights only."
   },
   {
-    question: "Who can play on Kaveramma Fantasy Cricket?",
+    question: "Who can play on Kaveramma Dream Cricket?",
     answer: "Users must be 18 years or older. The platform is NOT available in Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana due to state regulations."
   },
   {
@@ -500,7 +500,7 @@ export default function Home() {
                 {/* Badge */}
                 <motion.div variants={fadeInLeft} className="inline-flex items-center space-x-2 px-4 py-2 bg-white border border-border/50 rounded-full shadow-sm mb-6">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                  <span className="text-sm font-medium text-foreground">India's Free Fantasy Cricket Platform</span>
+                  <span className="text-sm font-medium text-foreground">India's Free Dream Cricket Platform</span>
                 </motion.div>
 
                 {/* Main Heading */}
@@ -508,7 +508,7 @@ export default function Home() {
                   variants={fadeInLeft}
                   className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
                 >
-                  <span className="text-foreground">Fantasy Cricket</span>
+                  <span className="text-foreground">Dream Cricket</span>
                   <br />
                   <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                     for Everyone
@@ -520,7 +520,7 @@ export default function Home() {
                   variants={fadeInLeft}
                   className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8"
                 >
-                  Build your dream cricket team, compete with friends, and master fantasy cricket strategy—completely free with no real money involved!
+                  Build your dream cricket team, compete with friends, and master dream cricket strategy—completely free with no real money involved!
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -623,7 +623,7 @@ export default function Home() {
                 Play Smart, Play Free
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Experience the thrill of fantasy cricket without any financial risk. Perfect for learning, entertainment, and honing your cricket knowledge.
+                Experience the thrill of dream cricket without any financial risk. Perfect for learning, entertainment, and honing your cricket knowledge.
               </motion.p>
             </motion.div>
 
@@ -690,7 +690,7 @@ export default function Home() {
                 How It Works
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Start your fantasy cricket journey in just four simple steps. No payment required, no complicated setup.
+                Start your dream cricket journey in just four simple steps. No payment required, no complicated setup.
               </motion.p>
             </motion.div>
 
@@ -773,7 +773,7 @@ export default function Home() {
                 Supported Matches
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Play fantasy cricket across multiple tournaments and formats. From IPL to international matches, we've got you covered.
+                Play dream cricket across multiple tournaments and formats. From IPL to international matches, we've got you covered.
               </motion.p>
             </motion.div>
 
@@ -886,7 +886,7 @@ export default function Home() {
                 Frequently Asked Questions
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Got questions? We've got answers. Here are some of the most common questions about Kaveramma Fantasy Cricket.
+                Got questions? We've got answers. Here are some of the most common questions about Kaveramma Dream Cricket.
               </motion.p>
             </motion.div>
 
@@ -972,7 +972,7 @@ export default function Home() {
                     Ready to Start Your Journey?
                   </h2>
                   <p className="text-white/80 max-w-2xl mx-auto mb-8 text-lg">
-                    Join cricket fans across India playing fantasy cricket for free. No risk, all fun, pure skill!
+                    Join cricket fans across India playing dream cricket for free. No risk, all fun, pure skill!
                   </p>
                   
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1024,7 +1024,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-white/60 text-sm mb-6 leading-relaxed">
-                Fantasy Cricket for Everyone. India's 100% free, skill-based entertainment platform. Learn, play, and enjoy fantasy cricket without any financial risk.
+                Dream Cricket for Everyone. India's 100% free, skill-based entertainment platform. Learn, play, and enjoy dream cricket without any financial risk.
               </p>
               <div className="flex items-center space-x-3">
                 <div className="px-3 py-1.5 bg-red-500/20 border border-red-500/30 rounded-full text-sm font-bold text-red-400">18+</div>

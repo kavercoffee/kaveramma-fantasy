@@ -49,7 +49,7 @@ export default function Login() {
                 <div className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
                   KAVERAMMA
                 </div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
+                <div className="text-xs text-muted-foreground -mt-0.5">Dream Cricket</div>
               </div>
             </a>
           </Link>

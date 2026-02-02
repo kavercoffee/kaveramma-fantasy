@@ -27,7 +27,7 @@ export default function Register() {
 
   const registerMutation = trpc.auth.register.useMutation({
     onSuccess: () => {
-      toast.success("Registration successful! Welcome to Kaveramma Fantasy Cricket.");
+      toast.success("Registration successful! Welcome to Kaveramma Dream Cricket.");
       setLocation("/dashboard");
     },
     onError: (error) => {
@@ -95,7 +95,7 @@ export default function Register() {
                 <div className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">
                   KAVERAMMA
                 </div>
-                <div className="text-xs text-muted-foreground -mt-0.5">Fantasy Cricket</div>
+                <div className="text-xs text-muted-foreground -mt-0.5">Dream Cricket</div>
               </div>
             </a>
           </Link>
@@ -127,7 +127,7 @@ export default function Register() {
               </motion.div>
               <CardTitle className="text-2xl font-bold">Create Account</CardTitle>
               <CardDescription>
-                Join Kaveramma Fantasy Cricket - 100% Free to Play
+                Join Kaveramma Dream Cricket - 100% Free to Play
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-4">

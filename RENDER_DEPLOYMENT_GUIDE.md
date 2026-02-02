@@ -1,6 +1,6 @@
-# Render.com Deployment Guide for Kaveramma Fantasy Cricket
+# Render.com Deployment Guide for Kaveramma Dream Cricket
 
-This guide will walk you through deploying your Kaveramma Fantasy Cricket platform to Render.com with PostgreSQL database.
+This guide will walk you through deploying your Kaveramma Dream Cricket platform to Render.com with PostgreSQL database.
 
 ## Why Render.com?
 
@@ -33,7 +33,7 @@ git init
 git add .
 
 # Commit
-git commit -m "Initial commit - Kaveramma Fantasy Cricket"
+git commit -m "Initial commit - Kaveramma Dream Cricket"
 
 # Create a new repository on GitHub, then:
 git remote add origin https://github.com/YOUR_USERNAME/kaveramma-fantasy.git
@@ -242,4 +242,4 @@ Render will automatically:
 
 ---
 
-**Congratulations!** Your Kaveramma Fantasy Cricket platform is now live on Render.com! 🎉
+**Congratulations!** Your Kaveramma Dream Cricket platform is now live on Render.com! 🎉

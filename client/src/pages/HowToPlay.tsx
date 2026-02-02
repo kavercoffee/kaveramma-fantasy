@@ -48,7 +48,7 @@ export default function HowToPlay() {
         "Each match card shows: Teams playing, Match date & time, Match type (T20/ODI/Test)",
         "Click on any match to see more details",
         "Check the deadline - you must create your team before the match starts",
-        "Select 'Create Team' to start building your fantasy team for that match"
+        "Select 'Create Team' to start building your dream team for that match"
       ],
       tip: "Start with T20 matches if you're new - they're shorter and easier to predict."
     },
@@ -56,7 +56,7 @@ export default function HowToPlay() {
       number: "03",
       icon: Users,
       title: "Build Your Dream Team",
-      description: "Select 11 players within the budget to create your fantasy team.",
+      description: "Select 11 players within the budget to create your dream team.",
       details: [
         "You have a virtual budget of 100 credits to spend on players",
         "Select exactly 11 players for your team",
@@ -168,14 +168,14 @@ export default function HowToPlay() {
     {
       icon: Zap,
       title: "Learn from Experience",
-      description: "Review your past teams to understand what worked and what didn't. Fantasy cricket is a skill that improves with practice."
+      description: "Review your past teams to understand what worked and what didn't. Dream cricket is a skill that improves with practice."
     }
   ];
 
   const faqs = [
     {
       question: "Is there any entry fee to play?",
-      answer: "No, absolutely not. Kaveramma Fantasy Cricket is 100% free to play. There are no entry fees, no hidden charges, and no real money involved at any point."
+      answer: "No, absolutely not. Kaveramma Dream Cricket is 100% free to play. There are no entry fees, no hidden charges, and no real money involved at any point."
     },
     {
       question: "Can I change my team after creating it?",
@@ -187,7 +187,7 @@ export default function HowToPlay() {
     },
     {
       question: "How are winners determined?",
-      answer: "Winners are determined by total points scored by their fantasy team. The user with the highest points ranks first on the leaderboard."
+      answer: "Winners are determined by total points scored by their dream team. The user with the highest points ranks first on the leaderboard."
     },
     {
       question: "Do winners get any prizes?",
@@ -212,11 +212,11 @@ export default function HowToPlay() {
               </motion.div>
               
               <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl font-bold mb-6">
-                How to Play <span className="bg-gradient-to-r from-primary to-green-600 bg-clip-text text-transparent">Fantasy Cricket</span>
+                How to Play <span className="bg-gradient-to-r from-primary to-green-600 bg-clip-text text-transparent">Dream Cricket</span>
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground mb-8">
-                New to fantasy cricket? Don't worry! This comprehensive guide will walk you through 
+                New to dream cricket? Don't worry! This comprehensive guide will walk you through 
                 everything you need to know to start playing and competing on our platform.
               </motion.p>
 
@@ -253,7 +253,7 @@ export default function HowToPlay() {
                 5 Simple Steps to Play
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto">
-                Follow these steps to create your first fantasy cricket team
+                Follow these steps to create your first dream cricket team
               </motion.p>
             </motion.div>
 
@@ -450,7 +450,7 @@ export default function HowToPlay() {
                 Pro Tips for Success
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-muted-foreground max-w-2xl mx-auto">
-                Follow these tips from experienced fantasy cricket players
+                Follow these tips from experienced dream cricket players
               </motion.p>
             </motion.div>
 
@@ -550,7 +550,7 @@ export default function HowToPlay() {
                 Ready to Start Playing?
               </h2>
               <p className="text-white/80 max-w-xl mx-auto mb-8">
-                Now that you know how to play, create your free account and build your first fantasy team!
+                Now that you know how to play, create your free account and build your first dream team!
               </p>
               <Link href="/register">
                 <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-8">

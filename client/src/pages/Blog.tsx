@@ -14,8 +14,8 @@ export default function Blog() {
   const blogPosts = [
     {
       id: 1,
-      title: "Getting Started with Fantasy Cricket: A Beginner's Guide",
-      excerpt: "New to fantasy cricket? This comprehensive guide covers everything you need to know to start building winning teams and understanding player statistics.",
+      title: "Getting Started with Dream Cricket: A Beginner's Guide",
+      excerpt: "New to dream cricket? This comprehensive guide covers everything you need to know to start building winning teams and understanding player statistics.",
       category: "Guides",
       author: "Kaveramma Team",
       date: "December 15, 2025",
@@ -24,8 +24,8 @@ export default function Blog() {
     },
     {
       id: 2,
-      title: "How to Choose the Perfect Captain for Your Fantasy Team",
-      excerpt: "Your captain choice can make or break your fantasy team. Learn the strategies and factors to consider when selecting your captain and vice-captain.",
+      title: "How to Choose the Perfect Captain for Your Dream Team",
+      excerpt: "Your captain choice can make or break your dream team. Learn the strategies and factors to consider when selecting your captain and vice-captain.",
       category: "Strategy",
       author: "Kaveramma Team",
       date: "December 12, 2025",
@@ -54,7 +54,7 @@ export default function Blog() {
     },
     {
       id: 5,
-      title: "The Importance of Pitch and Weather in Fantasy Cricket",
+      title: "The Importance of Pitch and Weather in Dream Cricket",
       excerpt: "Pitch conditions and weather can significantly impact player performance. Learn how to factor these into your team selection decisions.",
       category: "Tips",
       author: "Kaveramma Team",
@@ -64,8 +64,8 @@ export default function Blog() {
     },
     {
       id: 6,
-      title: "Common Mistakes to Avoid in Fantasy Cricket",
-      excerpt: "Even experienced players make these mistakes. Learn what to avoid to improve your fantasy cricket performance and climb the leaderboard.",
+      title: "Common Mistakes to Avoid in Dream Cricket",
+      excerpt: "Even experienced players make these mistakes. Learn what to avoid to improve your dream cricket performance and climb the leaderboard.",
       category: "Tips",
       author: "Kaveramma Team",
       date: "December 3, 2025",
@@ -87,10 +87,10 @@ export default function Blog() {
                 <span className="text-sm font-medium">Learn & Improve</span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-                Fantasy Cricket <span className="bg-gradient-to-r from-primary to-green-600 bg-clip-text text-transparent">Blog</span>
+                Dream Cricket <span className="bg-gradient-to-r from-primary to-green-600 bg-clip-text text-transparent">Blog</span>
               </h1>
               <p className="text-lg text-muted-foreground">
-                Tips, strategies, and insights to help you become a better fantasy cricket player. 
+                Tips, strategies, and insights to help you become a better dream cricket player. 
                 Learn from experts and improve your game.
               </p>
             </motion.div>
@@ -187,7 +187,7 @@ export default function Blog() {
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>
               <p className="text-muted-foreground mb-6">
-                Get the latest fantasy cricket tips and strategies delivered to your inbox.
+                Get the latest dream cricket tips and strategies delivered to your inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <input

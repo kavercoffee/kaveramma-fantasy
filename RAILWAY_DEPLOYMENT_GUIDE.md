@@ -1,8 +1,8 @@
-# Railway Deployment Guide for Kaveramma Fantasy Cricket
+# Railway Deployment Guide for Kaveramma Dream Cricket
 
 ## 🚀 Quick Deployment (5-10 minutes)
 
-This guide will help you deploy your Kaveramma Fantasy Cricket platform to Railway with a MySQL database.
+This guide will help you deploy your Kaveramma Dream Cricket platform to Railway with a MySQL database.
 
 ---
 
@@ -420,4 +420,4 @@ If you prefer using the web interface:
 
 ---
 
-**You're all set! Your Kaveramma Fantasy Cricket platform is now live on Railway! 🎉**
+**You're all set! Your Kaveramma Dream Cricket platform is now live on Railway! 🎉**

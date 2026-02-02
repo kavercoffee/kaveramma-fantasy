@@ -5,7 +5,7 @@ export const getLoginUrl = () => {
   return "/login";
 };
 
-// Restricted states in India for fantasy cricket
+// Restricted states in India for dream cricket
 export const RESTRICTED_STATES = [
   "Andhra Pradesh",
   "Assam",
@@ -58,8 +58,8 @@ export const INDIAN_STATES = [
 // Company information
 export const COMPANY_INFO = {
   name: "KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED",
-  brandName: "Kaveramma Fantasy Cricket",
-  tagline: "Fantasy Cricket for Everyone",
+  brandName: "Kaveramma Dream Cricket",
+  tagline: "Dream Cricket for Everyone",
   domain: "kaverammafantasy.com",
   cin: "U10792KA2024PTC186508",
   pan: "AAKCK9076B",

@@ -30,7 +30,7 @@ export default function TermsAndConditions() {
               Terms & Conditions
             </h1>
             <p className="text-lg text-white/70 mb-6">
-              Please read these terms carefully before using Kaveramma Fantasy Cricket
+              Please read these terms carefully before using Kaveramma Dream Cricket
             </p>
             <div className="flex items-center justify-center space-x-2 text-sm text-white/60">
               <Calendar className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function TermsAndConditions() {
                 <div>
                   <h3 className="font-semibold text-amber-900 mb-2">Important Notice</h3>
                   <p className="text-sm text-amber-800">
-                    By using Kaveramma Fantasy Cricket, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.
+                    By using Kaveramma Dream Cricket, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.
                   </p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
               <div className="p-8 lg:p-10 prose prose-slate max-w-none">
                 <h2 className="text-2xl font-bold text-gray-900 mt-0">1. Introduction and Acceptance</h2>
                 <p>
-                  Welcome to Kaveramma Fantasy Cricket ("Platform", "Service", "we", "us", or "our"), 
+                  Welcome to Kaveramma Dream Cricket ("Platform", "Service", "we", "us", or "our"), 
                   operated by <strong>KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED</strong>, a company 
                   incorporated under the laws of India with Corporate Identification Number (CIN): 
                   U10792KA2024PTC186508, having its registered office at C/O S K MOHAN, MEKOOR, SIDDAPURA, 
@@ -101,7 +101,7 @@ export default function TermsAndConditions() {
 
                 <h2 className="text-2xl font-bold text-gray-900">3. Nature of the Platform</h2>
                 <h3 className="text-xl font-semibold text-gray-800">3.1 Free-to-Play Model</h3>
-                <p>Kaveramma Fantasy Cricket is a <strong>100% free-to-play</strong> platform:</p>
+                <p>Kaveramma Dream Cricket is a <strong>100% free-to-play</strong> platform:</p>
                 <ul className="list-disc pl-6 space-y-1">
                   <li>No registration fees</li>
                   <li>No entry fees for any contest</li>
@@ -111,7 +111,7 @@ export default function TermsAndConditions() {
 
                 <h3 className="text-xl font-semibold text-gray-800">3.2 Skill-Based Gaming</h3>
                 <p>
-                  Fantasy cricket as offered on our Platform is a game of skill. Success depends on your 
+                  Dream cricket as offered on our Platform is a game of skill. Success depends on your 
                   knowledge of cricket, understanding of player performance, and strategic decision-making. 
                   This is NOT gambling, betting, or a game of chance.
                 </p>
@@ -128,7 +128,7 @@ export default function TermsAndConditions() {
                 <p>Each user is permitted to maintain only <strong>ONE (1) account</strong> on the Platform.</p>
 
                 <h2 className="text-2xl font-bold text-gray-900">5. Platform Rules and Gameplay</h2>
-                <p>When participating in fantasy cricket contests:</p>
+                <p>When participating in dream cricket contests:</p>
                 <ul className="list-disc pl-6 space-y-1">
                   <li>You must select exactly 11 players for your team</li>
                   <li>Your team must comply with the specified player composition rules</li>
@@ -198,7 +198,7 @@ export default function TermsAndConditions() {
               <CheckCircle className="w-12 h-12 mx-auto mb-4 opacity-80" />
               <h3 className="text-xl font-bold mb-2">Agreement Acknowledgment</h3>
               <p className="text-white/80 max-w-xl mx-auto">
-                By creating an account and using Kaveramma Fantasy Cricket, you confirm that you have read, 
+                By creating an account and using Kaveramma Dream Cricket, you confirm that you have read, 
                 understood, and agree to these Terms and Conditions.
               </p>
             </motion.div>

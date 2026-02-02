@@ -39,7 +39,7 @@ export default function AboutUs() {
     {
       icon: BookOpen,
       title: "Education & Learning",
-      description: "Fantasy cricket is more than just a game—it's an educational tool that deepens understanding of cricket strategy, player performance analysis, match conditions, and team dynamics. We provide comprehensive tutorials, strategy guides, statistical analysis tools, and learning resources to help users develop their cricket knowledge and analytical skills."
+      description: "Dream cricket is more than just a game—it's an educational tool that deepens understanding of cricket strategy, player performance analysis, match conditions, and team dynamics. We provide comprehensive tutorials, strategy guides, statistical analysis tools, and learning resources to help users develop their cricket knowledge and analytical skills."
     },
     {
       icon: Users,
@@ -49,7 +49,7 @@ export default function AboutUs() {
     {
       icon: Lightbulb,
       title: "Innovation & Excellence",
-      description: "We continuously innovate to provide cutting-edge features and improve user experience. Our dedicated team of developers, designers, and cricket analysts work tirelessly to introduce new functionalities, optimize performance, enhance interface design, and implement user-requested features. We embrace new technologies and methodologies to stay ahead in delivering the best fantasy cricket experience."
+      description: "We continuously innovate to provide cutting-edge features and improve user experience. Our dedicated team of developers, designers, and cricket analysts work tirelessly to introduce new functionalities, optimize performance, enhance interface design, and implement user-requested features. We embrace new technologies and methodologies to stay ahead in delivering the best dream cricket experience."
     }
   ];
 
@@ -57,7 +57,7 @@ export default function AboutUs() {
     {
       icon: Zap,
       title: "100% Free Forever",
-      description: "No hidden costs, no premium tiers, no entry fees. Every feature on Kaveramma is completely free to use. We believe fantasy cricket should be accessible to everyone regardless of financial status.",
+      description: "No hidden costs, no premium tiers, no entry fees. Every feature on Kaveramma is completely free to use. We believe dream cricket should be accessible to everyone regardless of financial status.",
       highlights: ["No registration fees", "No contest entry fees", "No subscription charges", "All features unlocked"]
     },
     {
@@ -95,7 +95,7 @@ export default function AboutUs() {
   const whyChooseUs = [
     {
       title: "No Financial Risk",
-      description: "Unlike traditional fantasy cricket platforms that involve real money transactions, Kaveramma is completely free. You can enjoy the thrill of fantasy cricket without worrying about losing money or getting into financial trouble. This makes it perfect for learning, entertainment, and honing your skills."
+      description: "Unlike traditional dream cricket platforms that involve real money transactions, Kaveramma is completely free. You can enjoy the thrill of dream cricket without worrying about losing money or getting into financial trouble. This makes it perfect for learning, entertainment, and honing your skills."
     },
     {
       title: "Educational Value",
@@ -107,15 +107,15 @@ export default function AboutUs() {
     },
     {
       title: "Safe for All Ages (18+)",
-      description: "Since there's no gambling or financial risk involved, Kaveramma provides a safe environment for adults (18 years and above) to enjoy fantasy cricket. Parents and guardians can be confident that users are engaging in a skill-based, educational activity rather than gambling."
+      description: "Since there's no gambling or financial risk involved, Kaveramma provides a safe environment for adults (18 years and above) to enjoy dream cricket. Parents and guardians can be confident that users are engaging in a skill-based, educational activity rather than gambling."
     },
     {
       title: "Community Support",
-      description: "Join thousands of cricket enthusiasts who share strategies, discuss matches, analyze player performances, and celebrate cricket together. Our active community forums, social media groups, and support channels ensure you're never alone in your fantasy cricket journey."
+      description: "Join thousands of cricket enthusiasts who share strategies, discuss matches, analyze player performances, and celebrate cricket together. Our active community forums, social media groups, and support channels ensure you're never alone in your dream cricket journey."
     },
     {
       title: "Continuous Improvement",
-      description: "We regularly update our platform based on user feedback, technological advancements, and cricket trends. New features, improved interfaces, enhanced analytics, and better user experiences are continuously rolled out to ensure Kaveramma remains the best free fantasy cricket platform."
+      description: "We regularly update our platform based on user feedback, technological advancements, and cricket trends. New features, improved interfaces, enhanced analytics, and better user experiences are continuously rolled out to ensure Kaveramma remains the best free dream cricket platform."
     }
   ];
 
@@ -128,7 +128,7 @@ export default function AboutUs() {
     { 
       year: "2025 Q1", 
       title: "Platform Development", 
-      description: "Intensive development phase where our team of engineers, designers, and cricket experts built the Kaveramma fantasy cricket platform from ground up with focus on user experience and fair play."
+      description: "Intensive development phase where our team of engineers, designers, and cricket experts built the Kaveramma dream cricket platform from ground up with focus on user experience and fair play."
     },
     { 
       year: "2025 Q2", 
@@ -138,17 +138,17 @@ export default function AboutUs() {
     { 
       year: "2025 Q3", 
       title: "Official Launch", 
-      description: "Launched Kaveramma to the public as India's premier free-to-play fantasy cricket platform, making fantasy cricket accessible to everyone without financial barriers."
+      description: "Launched Kaveramma to the public as India's premier free-to-play dream cricket platform, making dream cricket accessible to everyone without financial barriers."
     },
     { 
       year: "2025 Q4", 
       title: "Community Growth", 
-      description: "Rapidly growing community of cricket enthusiasts joining Kaveramma, participating in contests, sharing strategies, and enjoying skill-based fantasy cricket competition."
+      description: "Rapidly growing community of cricket enthusiasts joining Kaveramma, participating in contests, sharing strategies, and enjoying skill-based dream cricket competition."
     },
     { 
       year: "Future", 
       title: "Expansion & Innovation", 
-      description: "Plans to introduce new features, expand tournament coverage, enhance analytics capabilities, and build partnerships to provide even better fantasy cricket experiences."
+      description: "Plans to introduce new features, expand tournament coverage, enhance analytics capabilities, and build partnerships to provide even better dream cricket experiences."
     }
   ];
 
@@ -180,8 +180,8 @@ export default function AboutUs() {
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
-                India's premier free-to-play fantasy cricket platform where passion meets strategy. 
-                We're on a mission to make fantasy cricket accessible to every cricket enthusiast across India, 
+                India's premier free-to-play dream cricket platform where passion meets strategy. 
+                We're on a mission to make dream cricket accessible to every cricket enthusiast across India, 
                 providing a safe, fair, and educational environment to enjoy the game you love—completely free, forever.
               </motion.p>
 
@@ -214,8 +214,8 @@ export default function AboutUs() {
               >
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6">What is Kaveramma?</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Kaveramma is a revolutionary fantasy cricket platform that breaks down financial barriers to make fantasy sports 
-                  accessible to everyone. Unlike traditional fantasy cricket platforms that require monetary investments, contest 
+                  Kaveramma is a revolutionary dream cricket platform that breaks down financial barriers to make dream sports 
+                  accessible to everyone. Unlike traditional dream cricket platforms that require monetary investments, contest 
                   entry fees, or premium subscriptions, Kaveramma is completely free—forever.
                 </p>
               </motion.div>
@@ -234,7 +234,7 @@ export default function AboutUs() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  What sets Kaveramma apart is our commitment to keeping fantasy cricket purely skill-based and educational. 
+                  What sets Kaveramma apart is our commitment to keeping dream cricket purely skill-based and educational. 
                   There are no monetary prizes, no cash withdrawals, no deposits, and no financial transactions of any kind. 
                   Instead, users compete for glory, leaderboard rankings, achievement badges, and the satisfaction of demonstrating 
                   their cricket knowledge and strategic thinking abilities.
@@ -242,7 +242,7 @@ export default function AboutUs() {
 
                 <p className="text-muted-foreground leading-relaxed">
                   Whether you're a seasoned cricket analyst or a casual fan looking to deepen your understanding of the game, 
-                  Kaveramma provides the perfect platform to test your skills, learn from others, and enjoy fantasy cricket 
+                  Kaveramma provides the perfect platform to test your skills, learn from others, and enjoy dream cricket 
                   without any financial stress or risk.
                 </p>
               </motion.div>
@@ -264,7 +264,7 @@ export default function AboutUs() {
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   <p>
                     Kaveramma was born from a simple yet powerful observation: millions of cricket fans across India wanted 
-                    to experience the thrill of fantasy cricket but were hesitant or unable to participate due to the financial 
+                    to experience the thrill of dream cricket but were hesitant or unable to participate due to the financial 
                     aspects involved in most platforms. Many people couldn't afford entry fees, were uncomfortable with real 
                     money transactions, or simply wanted to learn without financial risk.
                   </p>
@@ -276,14 +276,14 @@ export default function AboutUs() {
                   </p>
                   <p>
                     After months of intensive development, user research, and testing with cricket fans across India, Kaveramma 
-                    was launched as a completely free-to-play fantasy cricket platform. Our goal was clear: democratize fantasy 
+                    was launched as a completely free-to-play dream cricket platform. Our goal was clear: democratize fantasy 
                     cricket, promote cricket education, and build a community united by love for the game rather than monetary gains.
                   </p>
                   <p>
-                    Today, Kaveramma stands as India's leading free fantasy cricket platform, serving thousands of users who 
+                    Today, Kaveramma stands as India's leading free dream cricket platform, serving thousands of users who 
                     participate in contests daily, share strategies, discuss matches, and celebrate cricket together. We continue 
                     to grow, innovate, and improve based on community feedback, always staying true to our core mission of making 
-                    fantasy cricket accessible to all.
+                    dream cricket accessible to all.
                   </p>
                 </div>
               </motion.div>
@@ -363,7 +363,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  To democratize fantasy cricket by providing a completely free, skill-based, and educational platform where 
+                  To democratize dream cricket by providing a completely free, skill-based, and educational platform where 
                   every cricket enthusiast in India—regardless of financial status, location, or experience level—can participate, 
                   learn, compete, and enjoy the game without any financial barriers, risks, or pressures.
                 </p>
@@ -375,7 +375,7 @@ export default function AboutUs() {
                 <div className="space-y-3">
                   <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3">Core Objectives</h4>
                   {[
-                    "Make fantasy cricket accessible to everyone",
+                    "Make dream cricket accessible to everyone",
                     "Promote cricket education and strategic thinking",
                     "Build a safe, fair, and transparent gaming environment",
                     "Foster an inclusive community of cricket enthusiasts",
@@ -402,12 +402,12 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  To become India's most trusted, loved, and widely-used free fantasy cricket platform, where millions of users 
+                  To become India's most trusted, loved, and widely-used free dream cricket platform, where millions of users 
                   across the nation experience the joy of building their dream teams, competing with friends and family, and 
                   deepening their cricket knowledge—all in a safe, fair, and financially risk-free environment.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  We envision a future where fantasy cricket is recognized not just as entertainment, but as a valuable 
+                  We envision a future where dream cricket is recognized not just as entertainment, but as a valuable 
                   educational tool that enhances cricket understanding, promotes analytical thinking, and brings communities 
                   together through shared passion for the sport.
                 </p>
@@ -415,7 +415,7 @@ export default function AboutUs() {
                   <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3">Future Goals</h4>
                   {[
                     "Reach millions of cricket fans across India",
-                    "Become the go-to platform for free fantasy cricket",
+                    "Become the go-to platform for free dream cricket",
                     "Expand coverage to more tournaments and formats",
                     "Build the largest community of cricket enthusiasts",
                     "Introduce innovative features and analytics",
@@ -479,7 +479,7 @@ export default function AboutUs() {
             >
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Makes Kaveramma Special</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Comprehensive features designed to provide the best free fantasy cricket experience
+                Comprehensive features designed to provide the best free dream cricket experience
               </p>
             </motion.div>
 
@@ -559,7 +559,7 @@ export default function AboutUs() {
             >
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Journey</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Key milestones in Kaveramma's evolution from concept to India's leading free fantasy cricket platform
+                Key milestones in Kaveramma's evolution from concept to India's leading free dream cricket platform
               </p>
             </motion.div>
 
@@ -601,7 +601,7 @@ export default function AboutUs() {
             >
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Join the Kaveramma Community</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Become part of India's fastest-growing free fantasy cricket community. Build your dream team, 
+                Become part of India's fastest-growing free dream cricket community. Build your dream team, 
                 compete with thousands of cricket fans, and showcase your cricket knowledge—all completely free!
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">

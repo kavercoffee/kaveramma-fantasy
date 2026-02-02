@@ -1,4 +1,4 @@
-# Vercel Deployment Guide for Kaveramma Fantasy Cricket
+# Vercel Deployment Guide for Kaveramma Dream Cricket
 
 ## ⚠️ Important Notice
 

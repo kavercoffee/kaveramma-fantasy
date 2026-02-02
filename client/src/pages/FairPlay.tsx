@@ -173,13 +173,13 @@ export default function FairPlay() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Commitment to Fair Play</h2>
               <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                 <p>
-                  At Kaveramma Fantasy Cricket, fair play is the foundation of our platform. We believe that fantasy cricket should be a level playing field where success is determined solely by cricket knowledge, strategic thinking, and analytical skills—not by unfair advantages, manipulation, or deceptive practices.
+                  At Kaveramma Dream Cricket, fair play is the foundation of our platform. We believe that dream cricket should be a level playing field where success is determined solely by cricket knowledge, strategic thinking, and analytical skills—not by unfair advantages, manipulation, or deceptive practices.
                 </p>
                 <p>
                   This Fair Play Policy outlines our rules, expectations, enforcement mechanisms, and consequences for violations. By using our platform, you agree to abide by these guidelines and contribute to a positive, ethical gaming community.
                 </p>
                 <p>
-                  We employ advanced technology, human moderation, and community reporting to detect and prevent unfair practices. Our goal is to ensure that every user has an equal opportunity to enjoy fantasy cricket in a safe, transparent, and respectful environment.
+                  We employ advanced technology, human moderation, and community reporting to detect and prevent unfair practices. Our goal is to ensure that every user has an equal opportunity to enjoy dream cricket in a safe, transparent, and respectful environment.
                 </p>
               </div>
             </motion.div>
@@ -509,10 +509,10 @@ export default function FairPlay() {
             <Shield className="w-16 h-16 mx-auto mb-6 opacity-80" />
             <h3 className="text-3xl font-bold mb-4">Our Commitment to You</h3>
             <p className="text-white/90 text-lg leading-relaxed mb-6">
-              We are dedicated to maintaining a fair, transparent, and enjoyable gaming environment for all users. Fair play is not just a policy—it's the foundation of our community. Together, we can ensure that Kaveramma Fantasy Cricket remains a platform where skill, knowledge, and strategy determine success.
+              We are dedicated to maintaining a fair, transparent, and enjoyable gaming environment for all users. Fair play is not just a policy—it's the foundation of our community. Together, we can ensure that Kaveramma Dream Cricket remains a platform where skill, knowledge, and strategy determine success.
             </p>
             <p className="text-white/80 text-sm">
-              Thank you for being part of our fair play community. Let's keep fantasy cricket fun, fair, and accessible to everyone.
+              Thank you for being part of our fair play community. Let's keep dream cricket fun, fair, and accessible to everyone.
             </p>
           </motion.div>
         </div>

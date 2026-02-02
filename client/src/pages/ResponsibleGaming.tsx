@@ -9,24 +9,24 @@ export default function ResponsibleGaming() {
 
   const guidelines = [
     { icon: Clock, title: "Set Time Limits", description: "Decide how much time you'll spend and stick to it" },
-    { icon: Brain, title: "Play for Fun", description: "Fantasy cricket is entertainment, not stress" },
+    { icon: Brain, title: "Play for Fun", description: "Dream cricket is entertainment, not stress" },
     { icon: Users, title: "Maintain Balance", description: "Keep healthy balance with other activities" },
     { icon: Shield, title: "Stay Informed", description: "Understand the rules and make better decisions" }
   ];
 
   const warningSignsPersonal = [
-    "Spending more time than intended on fantasy cricket",
+    "Spending more time than intended on dream cricket",
     "Neglecting work, studies, or personal responsibilities",
     "Feeling restless or irritable when not playing",
     "Lying to others about time spent on the platform",
-    "Using fantasy cricket to escape problems"
+    "Using dream cricket to escape problems"
   ];
 
   const healthyHabits = [
     "Set a daily or weekly time limit",
     "Take a break every hour when playing",
     "Don't play when tired, stressed, or emotional",
-    "Keep fantasy cricket as one of many hobbies",
+    "Keep dream cricket as one of many hobbies",
     "Talk to friends and family about your gaming habits"
   ];
 
@@ -55,7 +55,7 @@ export default function ResponsibleGaming() {
               Responsible Gaming
             </h1>
             <p className="text-lg text-white/70 mb-6">
-              Play smart, stay balanced, and enjoy fantasy cricket responsibly
+              Play smart, stay balanced, and enjoy dream cricket responsibly
             </p>
             <div className="flex items-center justify-center space-x-2 text-sm text-white/60">
               <Calendar className="w-4 h-4" />
@@ -211,7 +211,7 @@ export default function ResponsibleGaming() {
                 <div>
                   <h3 className="font-bold text-red-800 mb-1">Age Restriction</h3>
                   <p className="text-red-700 text-sm">
-                    Kaveramma Fantasy Cricket is strictly for users aged 18 and above. We verify age during registration.
+                    Kaveramma Dream Cricket is strictly for users aged 18 and above. We verify age during registration.
                   </p>
                 </div>
               </div>

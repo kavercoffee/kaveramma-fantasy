@@ -67,7 +67,7 @@ export default function Contact() {
 
   const quickLinks = [
     { icon: HelpCircle, title: "FAQ", description: "Find answers to common questions", href: "/faq" },
-    { icon: MessageSquare, title: "How to Play", description: "Learn the basics of fantasy cricket", href: "/how-to-play" },
+    { icon: MessageSquare, title: "How to Play", description: "Learn the basics of dream cricket", href: "/how-to-play" },
     { icon: AlertTriangle, title: "Report Issue", description: "Report bugs or violations", href: "#report" }
   ];
 
@@ -247,7 +247,7 @@ export default function Contact() {
                         <input type="checkbox" id="consent" required className="mt-1" />
                         <label htmlFor="consent" className="text-xs text-muted-foreground">
                           I agree to the <Link href="/privacy-policy"><a className="text-primary hover:underline">Privacy Policy</a></Link> and 
-                          consent to Kaveramma Fantasy Cricket processing my data to respond to my inquiry.
+                          consent to Kaveramma Dream Cricket processing my data to respond to my inquiry.
                         </label>
                       </div>
 

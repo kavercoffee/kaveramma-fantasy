@@ -1,4 +1,4 @@
--- Manual migration for Kaveramma Fantasy Cricket schema
+-- Manual migration for Kaveramma Dream Cricket schema
 
 -- Create users table with custom authentication
 CREATE TABLE IF NOT EXISTS `users` (

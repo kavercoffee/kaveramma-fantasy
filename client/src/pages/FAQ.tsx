@@ -46,16 +46,16 @@ export default function FAQ() {
       description: "Questions about creating and managing your account",
       faqs: [
         {
-          question: "How do I create an account on Kaveramma Fantasy Cricket?",
+          question: "How do I create an account on Kaveramma Dream Cricket?",
           answer: "Creating an account is simple and free. Click on 'Get Started' or 'Register' button on our homepage. You'll need to provide your email address, create a password, enter your full name, date of birth, and select your state of residence. After accepting our Terms & Conditions, click 'Create Account'. You may need to verify your email address by clicking a link we send you."
         },
         {
           question: "Is there any fee to register or play?",
-          answer: "No, absolutely not. Kaveramma Fantasy Cricket is 100% free to play. There are no registration fees, no entry fees for contests, no hidden charges, and no real money transactions of any kind. We are a free-to-play educational platform."
+          answer: "No, absolutely not. Kaveramma Dream Cricket is 100% free to play. There are no registration fees, no entry fees for contests, no hidden charges, and no real money transactions of any kind. We are a free-to-play educational platform."
         },
         {
           question: "What is the minimum age to play?",
-          answer: "You must be at least 18 years old to create an account and play on Kaveramma Fantasy Cricket. This is a legal requirement, and we verify age during registration. Users who provide false age information may have their accounts suspended."
+          answer: "You must be at least 18 years old to create an account and play on Kaveramma Dream Cricket. This is a legal requirement, and we verify age during registration. Users who provide false age information may have their accounts suspended."
         },
         {
           question: "I'm from Andhra Pradesh/Assam/Telangana/Odisha/Nagaland/Sikkim. Can I play?",
@@ -81,12 +81,12 @@ export default function FAQ() {
       description: "Understanding the game mechanics and rules",
       faqs: [
         {
-          question: "How does fantasy cricket work?",
-          answer: "Fantasy cricket allows you to create your own virtual cricket team by selecting real players from upcoming matches. Your team earns points based on how those players perform in the actual match. For example, if a batsman you selected scores runs, you earn points. The goal is to score more points than other participants."
+          question: "How does dream cricket work?",
+          answer: "Dream cricket allows you to create your own virtual cricket team by selecting real players from upcoming matches. Your team earns points based on how those players perform in the actual match. For example, if a batsman you selected scores runs, you earn points. The goal is to score more points than other participants."
         },
         {
           question: "How many players do I need to select for my team?",
-          answer: "You need to select exactly 11 players for your fantasy team. Your team must include: 1-4 Wicket-keepers, 3-6 Batsmen, 1-4 All-rounders, and 3-6 Bowlers. You must also select players from both teams playing in the match."
+          answer: "You need to select exactly 11 players for your dream team. Your team must include: 1-4 Wicket-keepers, 3-6 Batsmen, 1-4 All-rounders, and 3-6 Bowlers. You must also select players from both teams playing in the match."
         },
         {
           question: "What is the credit system?",
@@ -102,7 +102,7 @@ export default function FAQ() {
         },
         {
           question: "What happens if a player I selected doesn't play in the actual match?",
-          answer: "If a player in your fantasy team doesn't play in the actual match (not in the playing XI), they will score 0 points. This is why it's important to check team news and playing XI announcements before the deadline and make necessary changes."
+          answer: "If a player in your dream team doesn't play in the actual match (not in the playing XI), they will score 0 points. This is why it's important to check team news and playing XI announcements before the deadline and make necessary changes."
         },
         {
           question: "How are points calculated?",
@@ -117,7 +117,7 @@ export default function FAQ() {
       faqs: [
         {
           question: "How do I join a contest?",
-          answer: "After creating your fantasy team for a match, you're automatically entered into the public leaderboard for that match. There's no separate contest joining process - simply create your team before the deadline and you're in!"
+          answer: "After creating your dream team for a match, you're automatically entered into the public leaderboard for that match. There's no separate contest joining process - simply create your team before the deadline and you're in!"
         },
         {
           question: "Are there any prizes for winning?",
@@ -125,7 +125,7 @@ export default function FAQ() {
         },
         {
           question: "How is the leaderboard ranking determined?",
-          answer: "Leaderboard rankings are determined by total points scored by your fantasy team. The user with the highest points ranks first. In case of a tie, the user who created their team first gets the higher rank."
+          answer: "Leaderboard rankings are determined by total points scored by your dream team. The user with the highest points ranks first. In case of a tie, the user who created their team first gets the higher rank."
         },
         {
           question: "Can I see other users' teams?",
@@ -133,7 +133,7 @@ export default function FAQ() {
         },
         {
           question: "Is there a global leaderboard?",
-          answer: "Yes, in addition to match-specific leaderboards, we maintain a global leaderboard that tracks cumulative performance across all matches. This shows who the most consistent and skilled fantasy cricket players are on our platform."
+          answer: "Yes, in addition to match-specific leaderboards, we maintain a global leaderboard that tracks cumulative performance across all matches. This shows who the most consistent and skilled dream cricket players are on our platform."
         }
       ]
     },
@@ -144,7 +144,7 @@ export default function FAQ() {
       faqs: [
         {
           question: "Do I need to pay anything to play?",
-          answer: "No. Kaveramma Fantasy Cricket is completely free. There are no registration fees, no entry fees, no subscription charges, and no in-app purchases required to play. Every feature on our platform is available to all users at no cost."
+          answer: "No. Kaveramma Dream Cricket is completely free. There are no registration fees, no entry fees, no subscription charges, and no in-app purchases required to play. Every feature on our platform is available to all users at no cost."
         },
         {
           question: "Is there any real money involved?",
@@ -152,11 +152,11 @@ export default function FAQ() {
         },
         {
           question: "Why is the platform free?",
-          answer: "We are backed by investors who believe in fantasy cricket as an educational tool. Our mission is to make fantasy cricket accessible to everyone without financial barriers. We sustain our operations through strategic partnerships and may introduce optional premium features in the future that enhance but don't affect core gameplay."
+          answer: "We are backed by investors who believe in dream cricket as an educational tool. Our mission is to make dream cricket accessible to everyone without financial barriers. We sustain our operations through strategic partnerships and may introduce optional premium features in the future that enhance but don't affect core gameplay."
         },
         {
           question: "Will you ever charge money in the future?",
-          answer: "Our core gameplay will always remain free. We may introduce optional premium features in the future (like advanced statistics or cosmetic items), but participating in fantasy cricket contests will never require payment."
+          answer: "Our core gameplay will always remain free. We may introduce optional premium features in the future (like advanced statistics or cosmetic items), but participating in dream cricket contests will never require payment."
         },
         {
           question: "Why do you ask for PAN/identity details if there's no money involved?",
@@ -224,16 +224,16 @@ export default function FAQ() {
       description: "Legal questions and regulatory compliance",
       faqs: [
         {
-          question: "Is fantasy cricket legal in India?",
-          answer: "Yes, fantasy cricket is legal in India. The Supreme Court and various High Courts have recognized fantasy sports as games of skill, not gambling. However, some states have restrictions, which is why we don't operate in Andhra Pradesh, Assam, Telangana, Odisha, Nagaland, and Sikkim."
+          question: "Is dream cricket legal in India?",
+          answer: "Yes, dream cricket is legal in India. The Supreme Court and various High Courts have recognized dream sports as games of skill, not gambling. However, some states have restrictions, which is why we don't operate in Andhra Pradesh, Assam, Telangana, Odisha, Nagaland, and Sikkim."
         },
         {
           question: "Why can't users from certain states play?",
-          answer: "Some Indian states have enacted laws that restrict or prohibit online gaming, including fantasy sports. To comply with these laws, we don't allow users from Andhra Pradesh, Assam, Telangana, Odisha, Nagaland, and Sikkim to register or play on our platform."
+          answer: "Some Indian states have enacted laws that restrict or prohibit online gaming, including dream sports. To comply with these laws, we don't allow users from Andhra Pradesh, Assam, Telangana, Odisha, Nagaland, and Sikkim to register or play on our platform."
         },
         {
-          question: "Is Kaveramma Fantasy Cricket a gambling platform?",
-          answer: "Absolutely not. We are NOT a gambling platform. There is no real money involved - no deposits, no withdrawals, no prizes. Our platform is purely for entertainment and education. Fantasy cricket is recognized as a game of skill, not chance."
+          question: "Is Kaveramma Dream Cricket a gambling platform?",
+          answer: "Absolutely not. We are NOT a gambling platform. There is no real money involved - no deposits, no withdrawals, no prizes. Our platform is purely for entertainment and education. Dream cricket is recognized as a game of skill, not chance."
         },
         {
           question: "What happens if laws change in my state?",
@@ -277,7 +277,7 @@ export default function FAQ() {
               </motion.h1>
               
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground mb-8">
-                Find answers to common questions about Kaveramma Fantasy Cricket. 
+                Find answers to common questions about Kaveramma Dream Cricket. 
                 Can't find what you're looking for? Contact our support team.
               </motion.p>
 

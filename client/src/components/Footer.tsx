@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-white/60 text-sm mb-4">
-              Fantasy Cricket for Everyone. 100% free, skill-based entertainment platform.
+              Dream Cricket for Everyone. 100% free, skill-based entertainment platform.
             </p>
             <div className="flex items-center space-x-3">
               <div className="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-xs font-bold text-red-400">18+</div>
