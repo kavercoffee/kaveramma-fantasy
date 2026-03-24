@@ -1080,7 +1080,7 @@ export default function Home() {
                   </p>
                   <p className="flex items-center">
                     <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-                    <span>support@kaverammafantasy.com</span>
+                    <span>support@kaverammasfantasy.com</span>
                   </p>
                 </div>
                 <div className="pt-2 border-t border-white/10">
@@ -1106,7 +1106,7 @@ export default function Home() {
               <p>© 2025 KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED. All rights reserved.</p>
               <p className="flex items-center">
                 <Globe className="w-4 h-4 mr-2" />
-                kaverammafantasy.com
+                kaverammasfantasy.com
               </p>
             </div>
           </div>

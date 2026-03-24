@@ -48,7 +48,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      details: "support@kaverammafantasy.com",
+      details: "support@kaverammasfantasy.com",
       subtext: "We'll respond within 24 hours"
     },
     {

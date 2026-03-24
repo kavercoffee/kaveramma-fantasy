@@ -161,7 +161,7 @@ export default function PrivacyPolicy() {
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="mb-1"><strong>KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED</strong></p>
                   <p className="mb-1">Address: C/O S K MOHAN, MEKOOR, SIDDAPURA, Pollibetta, Virajpet, Kodagu - 571215, Karnataka</p>
-                  <p>Email: privacy@kaverammafantasy.com</p>
+                  <p>Email: privacy@kaverammasfantasy.com</p>
                 </div>
               </div>
             </div>

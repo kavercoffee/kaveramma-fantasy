@@ -339,3 +339,6 @@
 - [x] Remove GoogleAdsBanner import and usage from Home.tsx
 - [x] Delete GoogleAdsBanner.tsx component file
 - [x] Remove adUtils.ts utility file
+
+## Domain Update
+-- [x] Replace kaverammafantasy.com with kaverammasfantasy.com everywhere in codebase

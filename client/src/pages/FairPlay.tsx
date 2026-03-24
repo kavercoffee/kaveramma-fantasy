@@ -440,7 +440,7 @@ export default function FairPlay() {
                 <ul className="space-y-2 text-sm text-blue-700">
                   <li className="flex items-start space-x-2">
                     <span>•</span>
-                    <span>Email: support@kaverammafantasy.com</span>
+                    <span>Email: support@kaverammasfantasy.com</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span>•</span>

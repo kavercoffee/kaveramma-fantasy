@@ -183,7 +183,7 @@ export default function TermsAndConditions() {
                   <p className="mb-1"><strong>KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED</strong></p>
                   <p className="mb-1">Address: C/O S K MOHAN, MEKOOR, SIDDAPURA, Pollibetta, Virajpet, Kodagu - 571215, Karnataka</p>
                   <p className="mb-1">CIN: U10792KA2024PTC186508</p>
-                  <p>Email: support@kaverammafantasy.com</p>
+                  <p>Email: support@kaverammasfantasy.com</p>
                 </div>
               </div>
             </div>

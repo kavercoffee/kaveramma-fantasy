@@ -60,7 +60,7 @@ export const COMPANY_INFO = {
   name: "KAVERAMMA COFFEE CURING WORKS PRIVATE LIMITED",
   brandName: "Kaveramma Dream Cricket",
   tagline: "Dream Cricket for Everyone",
-  domain: "kaverammafantasy.com",
+  domain: "kaverammasfantasy.com",
   cin: "U10792KA2024PTC186508",
   pan: "AAKCK9076B",
   tan: "BLRK29132F",

@@ -327,7 +327,7 @@ export default function AboutUs() {
                     <div className="text-sm text-muted-foreground mb-1">Contact Email</div>
                     <div className="font-semibold flex items-center text-sm">
                       <Mail className="w-4 h-4 mr-2 text-primary" />
-                      support@kaverammafantasy.com
+                      support@kaverammasfantasy.com
                     </div>
                   </div>
                 </div>
