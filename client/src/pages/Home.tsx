@@ -36,7 +36,6 @@ import {
   Mail
 } from "lucide-react";
 import { useState } from "react";
-import GoogleAdsBanner from "@/components/GoogleAdsBanner";
 
 // Animation variants
 const fadeInUp = {
@@ -371,7 +370,6 @@ export default function Home() {
   const { isAuthenticated } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [isBannerVisible, setIsBannerVisible] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -380,7 +378,7 @@ export default function Home() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/50 ${isBannerVisible ? "hidden lg:block" : ""}`}
+        className={`sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border/50`}
       >
         <div className="container flex h-16 items-center justify-between">
           {/* Logo */}
@@ -473,9 +471,6 @@ export default function Home() {
           </motion.div>
         )}
       </motion.header>
-
-      {/* Google Ads Banner - Shows before hero section on mobile */}
-      <GoogleAdsBanner onVisibilityChange={setIsBannerVisible} />
 
       <main className="flex-1">
         {/* ==================== HERO SECTION ==================== */}

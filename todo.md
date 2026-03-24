@@ -334,3 +334,8 @@
 
 ## Branding Update - Replace Fantasy with Dream
 - [x] Replace all "Fantasy" with "Dream" throughout the website (branding change)
+
+## Remove Google Ads Banner
+- [x] Remove GoogleAdsBanner import and usage from Home.tsx
+- [x] Delete GoogleAdsBanner.tsx component file
+- [x] Remove adUtils.ts utility file
